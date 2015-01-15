@@ -1,0 +1,8 @@
+### Linux ###
+.*
+!.gitignore
+!.git*
+*~
+
+# KDE directory preferences
+.directory
