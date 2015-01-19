@@ -1,4 +1,4 @@
-# Android开源框架库分类
+# Android开源框架分类
 Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
 ##Index
 * [Networking](#networking)
@@ -44,6 +44,17 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
   2. 如果SPDY不可用，利用连接池减少请求延迟
   3. 使用GZIP压缩
   4. Response缓存减少不必要的请求  
+#### [Volley](https://android.googlesource.com/platform/frameworks/volley)
+**Repository**: [google volley](https://android.googlesource.com/platform/frameworks/volley) | [https://github.com/mcxiaoke/android-volley](https://github.com/mcxiaoke/android-volley)  
+**Description**: Google提供的网络通信库，使得网络请求更简单、更快速  
+**Features**:  
+  1. JSON，图像等的异步下载
+  2. 网络请求的排序
+  3. 网络请求的优先级处理
+  4. 缓存 
+  5. 多级别取消请求
+  6. 和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）
+  7. [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf) 
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
