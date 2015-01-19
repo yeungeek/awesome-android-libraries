@@ -1,64 +1,235 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <meta name="description" content="Awesome-android-libraries : awesome android libraries">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Awesome-android-libraries by yeungeek</title>
+    <title>Awesome-android-libraries</title>
   </head>
 
   <body>
-    <header>
-      <div class="inner">
-        <h1>Awesome-android-libraries</h1>
-        <h2>awesome android libraries</h2>
-        <a href="https://github.com/yeungeek/awesome-android-libraries" class="button"><small>View project on</small> GitHub</a>
-      </div>
-    </header>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h1>
-<a id="list-of-android-libraries" class="anchor" href="#list-of-android-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>List of Android Libraries</h1>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/yeungeek/awesome-android-libraries">View on GitHub</a>
 
-<p>Android 开发框架</p>
+          <h1 id="project_title">Awesome-android-libraries</h1>
+          <h2 id="project_tagline">awesome android libraries</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/yeungeek/awesome-android-libraries/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/yeungeek/awesome-android-libraries/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="android开源框架分类" class="anchor" href="#android%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6%E5%88%86%E7%B1%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开源框架分类</h1>
+
+<p>Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。</p>
+
+<h2>
+<a id="index" class="anchor" href="#index" aria-hidden="true"><span class="octicon octicon-link"></span></a>Index</h2>
+
+<ul>
+<li>
+<a href="#networking">Networking</a>
+
+<ul>
+<li><a href="#android-lite-http">Android Lite Http</a></li>
+<li><a href="#asynchronous-http-client-for-android">Asynchronous Http Client for Android</a></li>
+<li><a href="#async-http-client">Async Http Client</a></li>
+<li><a href="#httpcache">HttpCache</a></li>
+<li><a href="#http-request">Http Request</a></li>
+<li><a href="#ion">Ion</a></li>
+<li><a href="#okhttp">OkHttp</a></li>
+<li><a href="#retrofit">Retrofit</a></li>
+<li><a href="#volley">Volley</a></li>
+<li><a href="#volley_okHttp_android">Volley OkHttp Android</a></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="networking" class="anchor" href="#networking" aria-hidden="true"><span class="octicon octicon-link"></span></a>Networking</h3>
+
+<h4>
+<a id="android-lite-http" class="anchor" href="#android-lite-http" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://litesuits.com/">Android Lite Http</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/litesuits/android-lite-http">https://github.com/litesuits/android-lite-http</a><br>
+<strong>Description</strong>: 一款‘智能’的HTTP框架类库。国人开发的一套框架。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>单线程，所有方法都基于一个线程，绝不会跨线程，多线程的事情交给它自带的AsyncExecutor 或者更专业的框架库来解决。</li>
+<li>灵活的架构，你可以轻松的替换Json自动化库、参数构建方式甚至默认的apache http client连接方式。</li>
+<li>轻量级，微小的的开销，core jar包仅约86kb。</li>
+<li>多种请求类型全面支持：get, post, head, put, delete, trace, options, patch.</li>
+<li>多文件上传，不需要额外的类库支持。</li>
+<li>内置的Dataparser支持文件和位图下载，你也可以自由的扩展DataParser来把原始的http inputstream转化为你想要的东西。</li>
+<li>基于json的全自动对象转化： 框架帮你完成Java Object Model 和 Http Parameter之间的转化，完成Http Response与Java Object Model的转化。</li>
+<li>自动重定向，基于一定的次数，不会造成死循环。</li>
+<li>自动gizp压缩，帮你完成request编码和response解码以使http连接更加快速.</li>
+<li>通过网络探测完成智能重试 ，对复杂的、信号不良的的移动网络做特殊的优化。</li>
+<li>禁用一种或多种网络, 比如2G，3G。</li>
+<li>简明且统一的异常处理体系：清晰、准确的抛出客户端、网络、服务器三种异常。</li>
+<li>内置的AsyncExecutor可以让你轻松实现异步和并发的http请求，如果你喜欢，随意使用你自己的AsyncTask或Thread来完成异步，推荐使用更强大、高效的专业并发库。 </li>
+</ul>
+
+<h4>
+<a id="asynchronous-http-client-for-android" class="anchor" href="#asynchronous-http-client-for-android" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://loopj.com/android-async-http/">Asynchronous Http Client for Android</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/loopj/android-async-http">https://github.com/loopj/android-async-http</a><br>
+<strong>Description</strong>: Android异步Http请求<br>
+<strong>Used By</strong>:</p>
+
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.instagram.android">Instagram</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.pinterest">Pinterest</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.glu.modwarsniper">Frontline Commando</a></li>
+<li><a href="http://www.appbrain.com/stats/libraries/details/loopj_asynchttpclient/android-asynchronous-http-client">Thousands more apps…</a></li>
+</ul>
+
+<p><strong>Features</strong>:</p>
+
+<ol>
+<li>在匿名回调中处理请求结果</li>
+<li>在UI线程外进行http请求</li>
+<li>请求使用ThreadPool来处理并非资源的使用</li>
+<li>文件断点上传</li>
+<li>智能重试</li>
+<li>默认gzip压缩</li>
+<li>内置Json解析</li>
+<li>可将Cookies持久化到SharedPreferences</li>
+<li><a href="https://github.com/loopj/android-async-http#features">More</a></li>
+</ol>
+
+<h4>
+<a id="async-http-client" class="anchor" href="#async-http-client" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://asynchttpclient.github.io/async-http-client/">Async Http Client</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/AsyncHttpClient/async-http-client">https://github.com/AsyncHttpClient/async-http-client</a><br>
+<strong>Description</strong>: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于<a href="">Netty</a>之上。 </p>
+
+<h4>
+<a id="httpcache" class="anchor" href="#httpcache" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://www.trinea.cn/android/android-http-cache">HttpCache</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/Trinea/AndroidCommon">https://github.com/Trinea/AndroidCommon</a><br>
+<strong>Description</strong>: <a href="https://github.com/Trinea">Trinea</a>大神写的Http缓存工具。 
+<strong>Features</strong>:</p>
+
+<ul>
+<li>根据cache-control、expires缓存http请求</li>
+<li>支持同步、异步Http请求</li>
+<li>在匿名回调中处理请求结果</li>
+<li>在UI线程外进行http请求</li>
+<li>默认gzip压缩</li>
+</ul>
+
+<h4>
+<a id="http-request" class="anchor" href="#http-request" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/kevinsawicki/http-request">Http Request</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/kevinsawicki/http-request">https://github.com/kevinsawicki/http-request</a><br>
+<strong>Description</strong>: Java HTTP请求库。 </p>
+
+<h4>
+<a id="ion" class="anchor" href="#ion" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/koush/ion">Ion</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/koush/ion">https://github.com/koush/ion</a><br>
+<strong>Description</strong>: Android异步网络和图片加载.<br>
+<strong>Used By</strong>: <a href="https://github.com/koush/ion#projects-using-ion">https://github.com/koush/ion#projects-using-ion</a><br>
+<strong>Features</strong>: <a href="https://github.com/koush/ion#features">https://github.com/koush/ion#features</a>  </p>
+
+<h4>
+<a id="okhttp" class="anchor" href="#okhttp" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://square.github.io/okhttp/">OkHttp</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/square/okhttp">https://github.com/square/okhttp</a><br>
+<strong>Description</strong>: Square开源的http库，支持http和spdy协议.<br>
+<strong>Features</strong>:</p>
+
+<ol>
+<li>支持HTTP2和<a href="http://zh.wikipedia.org/wiki/SPDY">SPDY</a>
+</li>
+<li>如果SPDY不可用，利用连接池减少请求延迟</li>
+<li>使用GZIP压缩</li>
+<li>Response缓存减少不必要的请求<br>
+</li>
+</ol>
+
+<h4>
+<a id="retrofit" class="anchor" href="#retrofit" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://square.github.io/retrofit/">Retrofit</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/square/retrofit">https://github.com/square/retrofit</a><br>
+<strong>Description</strong>: Square开源的Android和Java的REST风格请求库. </p>
+
+<h4>
+<a id="volley" class="anchor" href="#volley" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://android.googlesource.com/platform/frameworks/volley">Volley</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://android.googlesource.com/platform/frameworks/volley">google volley</a> | <a href="https://github.com/mcxiaoke/android-volley">https://github.com/mcxiaoke/android-volley</a><br>
+<strong>Description</strong>: Google提供的网络通信库，使得网络请求更简单、更快速<br>
+<strong>Features</strong>:  </p>
+
+<ol>
+<li>JSON，图像等的异步下载</li>
+<li>网络请求的排序</li>
+<li>网络请求的优先级处理</li>
+<li>缓存 </li>
+<li>多级别取消请求</li>
+<li>和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）</li>
+<li>
+<a href="http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf">More</a> </li>
+</ol>
+
+<h4>
+<a id="volley-okhttp-android" class="anchor" href="#volley-okhttp-android" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/lxdvs/Volley-OkHttp-Android/">Volley OkHttp Android</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/lxdvs/Volley-OkHttp-Android">https://github.com/lxdvs/Volley-OkHttp-Android</a><br>
+<strong>Description</strong>: 整合OkHttp和Volley。 </p>
+
+<p><a href="https://github.com/yeungeek/awesome-android-libraries#networking" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
 
 <h2>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
 
 <ul>
-<li><a href="https://github.com/Trinea/android-open-project">Trinea android-open-project</a></li>
-<li><a href="https://github.com/wasabeef/awesome-android-libraries">wasabeef awesome-android-libraries</a></li>
+<li> <a href="https://android-arsenal.com/">android-arsenal</a>
+</li>
+<li> <a href="https://github.com/Trinea/android-open-project">Trinea android-open-project</a>
+</li>
+<li> <a href="https://github.com/wasabeef/awesome-android-libraries">wasabeef awesome-android-libraries</a>
+</li>
 </ul>
-        </section>
 
-        <aside id="sidebar">
-          <a href="https://github.com/yeungeek/awesome-android-libraries/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/yeungeek/awesome-android-libraries/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/yeungeek/awesome-android-libraries"></a> is maintained by <a href="https://github.com/yeungeek">yeungeek</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+<p><a href="https://github.com/yeungeek/awesome-android-libraries#index" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
+      </section>
     </div>
 
-  
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Awesome-android-libraries maintained by <a href="https://github.com/yeungeek">yeungeek</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
