@@ -5,8 +5,11 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Android Lite Http](#android-lite-http)
 	* [Asynchronous Http Client for Android](#asynchronous-http-client-for-android)
 	* [Async Http Client](#async-http-client)
+	* [HttpCache](#httpcache)
+	* [Http Request](#http-request)
 	* [Ion](#ion)
 	* [OkHttp](#okhttp)
+	* [Retrofit](#retrofit)
 	* [Volley](#volley)
 
 ### Networking
@@ -60,6 +63,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 在匿名回调中处理请求结果
 * 在UI线程外进行http请求
 * 默认gzip压缩
+
 #### [Http Request](https://github.com/kevinsawicki/http-request) 
 **Repository**: [https://github.com/kevinsawicki/http-request](https://github.com/kevinsawicki/http-request)  
 **Description**: Java HTTP请求库。 
