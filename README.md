@@ -2,7 +2,7 @@
 Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
 ##Index
 * [Networking](#networking)
-	* [android-lite-http](#android-lite-http)
+	* [Android Lite Http](#android-lite-http)
 	* [Asynchronous Http Client for Android](#asynchronous-http-client-for-android)
 	* [Async Http Client](#async-http-client)
 	* [Ion](#ion)
@@ -10,7 +10,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Volley](#volley)
 
 ### Networking
-#### [android-lite-http](http://litesuits.com/) 
+#### [Android Lite Http](http://litesuits.com/) 
 **Repository**: [https://github.com/litesuits/android-lite-http](https://github.com/litesuits/android-lite-http)  
 **Description**: 一款‘智能’的HTTP框架类库。国人开发的一套框架。  
 **Features**:  
@@ -51,6 +51,19 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 #### [Async Http Client](https://asynchttpclient.github.io/async-http-client/)  
 **Repository**: [https://github.com/AsyncHttpClient/async-http-client](https://github.com/AsyncHttpClient/async-http-client)  
 **Description**: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于[Netty]()之上。 
+#### [HttpCache](http://www.trinea.cn/android/android-http-cache) 
+**Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
+**Description**: [Trinea](https://github.com/Trinea)大神写的Http缓存工具。 
+**Features**:
+* 根据cache-control、expires缓存http请求
+* 支持同步、异步Http请求
+* 在匿名回调中处理请求结果
+* 在UI线程外进行http请求
+* 默认gzip压缩
+#### [Http Request](https://github.com/kevinsawicki/http-request) 
+**Repository**: [https://github.com/kevinsawicki/http-request](https://github.com/kevinsawicki/http-request)  
+**Description**: Java HTTP请求库。 
+
 #### [Ion](https://github.com/koush/ion)
 **Repository**: https://github.com/koush/ion  
 **Description**: Android异步网络和图片加载.   
@@ -65,7 +78,9 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
   3. 使用GZIP压缩
   4. Response缓存减少不必要的请求  
   
-#### [OkHttp](http://square.github.io/okhttp/) 
+#### [Retrofit](http://square.github.io/retrofit/) 
+**Repository**: [https://github.com/square/retrofit](https://github.com/square/retrofit)  
+**Description**: Square开源的Android和Java的REST风格请求库. 
 
 #### [Volley](https://android.googlesource.com/platform/frameworks/volley)
 **Repository**: [google volley](https://android.googlesource.com/platform/frameworks/volley) | [https://github.com/mcxiaoke/android-volley](https://github.com/mcxiaoke/android-volley)  
