@@ -57,7 +57,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
   6. 和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）
   7. [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf) 
 
-<a href="https://github.com/yeungeek/awesome-android-libraries#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_up.png" align="right"/></a>
+<a href="https://github.com/yeungeek/awesome-android-libraries#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
