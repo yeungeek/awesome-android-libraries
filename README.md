@@ -15,6 +15,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Thousands more apps…](http://www.appbrain.com/stats/libraries/details/loopj_asynchttpclient/android-asynchronous-http-client)
 	
 	**Features**:
+        
 	1. 在匿名回调中处理请求结果
 	2. 在UI线程外进行http请求
 	3. 请求使用ThreadPool来处理并非资源的使用
