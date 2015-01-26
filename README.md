@@ -22,6 +22,19 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [ImageCache](#imagecache)
     * [Picasso](#picasso)
     * [Universal Image Loader for Android](#universal-image-loader-for-android)
+* [O/R Mapping]
+* [Event Buses]
+* [JSON]
+* [Backward Compatibility]
+* [Background Processing]
+* [Image Processing]
+* [Camera]
+* [Video]
+* [Logging]
+* [Android Plugin]
+* [NoSQL]
+* [Security]
+* [Showcases]
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
