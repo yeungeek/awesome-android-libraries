@@ -3,6 +3,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 ##Index
 * [Dependency Injections](#dependency-injections)
     * [AndroidAnnotations](#androidannotations)
+    * [Butter Knife](#butter-knife)
+    * [Dagger](#dagger)
 * [Networking](#networking)
 	* [Android Lite Http](#android-lite-http)
 	* [Asynchronous Http Client for Android](#asynchronous-http-client-for-android)
@@ -32,7 +34,30 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * REST客户端：定义客户端接口，自动生成REST请求的实现
 * 没有你想象的复杂：AndroidAnnotations只是在在编译时生成相应子类
 * 不影响应用性能：仅50kb，在编译时完成，不会对运行时有性能影响。  
-> PS：与roboguice的比较：roboguice通过运行时读取annotations进行反射，所以可能影响应用性能，而AndroidAnnotations在编译时生成子类，所以对性能没有影响
+
+> PS：与roboguice的比较：roboguice通过运行时读取annotations进行反射，所以可能影响应用性能，而AndroidAnnotations在编译时生成子类，所以对性能没有影响。  
+
+#### [Butter Knife](http://jakewharton.github.io/butterknife/)
+**Repository**: [https://github.com/JakeWharton/butterknife](https://github.com/JakeWharton/butterknife)  
+**Description**: JakeWharton的开源作品，利用annotation帮你快速完成View的初始化，减少代码。  
+**Features**:  
+* 支持 Activity 中的 View 注入
+* 支持 View 中的 View 注入
+* 支持 View 事件回调函数注入
+
+#### [Dagger](http://square.github.io/dagger/)
+**Repository**: [https://github.com/square/dagger](https://github.com/square/dagger)  
+**Description**: sqaure开源的依赖注入框架，是Guice的一个子集，更轻量，更适合在Android平台使用。  
+**Features**:  
+* 使用 JSR-330标准注解进行构造器注入
+* 使用@Provides注解创建对象
+* 针对依赖树的中心上下文
+* 昂贵资源延迟注入
+* 同一接口的多种实现
+* 静态注入 (针对遗留环境)
+* 绑定的编译时验证
+
+> 依赖注入框架的对比：[dagger-and-butter-knife-vs-android-annotations](http://stackoverflow.com/questions/24351817/dagger-and-butter-knife-vs-android-annotations),[依赖注入浅析](http://blog.csdn.net/tryit1993/article/details/40210687)
 
 <a href="#dependency-injections" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ### Networking
