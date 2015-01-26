@@ -1,6 +1,8 @@
 # Android开源框架分类
 Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
 ##Index
+* [Dependency Injections](#dependency-injections)
+    * [AndroidAnnotations](#androidannotations)
 * [Networking](#networking)
 	* [Android Lite Http](#android-lite-http)
 	* [Asynchronous Http Client for Android](#asynchronous-http-client-for-android)
@@ -14,11 +16,25 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Volley OkHttp Android](#volley_okhttp_android)
 * [Image Loader](#image-loader)
     * [Cube SDK](#cube-sdk)
-    * [Glide](glide)
-    * [ImageCache](imagecache)
-    * [Picasso](picasso)
-    * [Universal Image Loader for Android](universal-image-loader-for-android)
+    * [Glide](#glide)
+    * [ImageCache](#imagecache)
+    * [Picasso](#picasso)
+    * [Universal Image Loader for Android](#universal-image-loader-for-android)
 
+### Dependency Injections
+#### [AndroidAnnotations](http://androidannotations.org/)
+**Repository**: [https://github.com/excilys/androidannotations](https://github.com/excilys/androidannotations)  
+**Description**: android快速开发框架。  
+**Features**:  
+* 依赖注入：包括view，extras，系统服务，资源等等
+* 简单的线程模型，通过annotation表示方法运行在ui线程还是后台线程
+* 事件绑定：通过annotation表示view的响应事件，不用在写内部类
+* REST客户端：定义客户端接口，自动生成REST请求的实现
+* 没有你想象的复杂：AndroidAnnotations只是在在编译时生成相应子类
+* 不影响应用性能：仅50kb，在编译时完成，不会对运行时有性能影响。  
+> PS：与roboguice的比较：roboguice通过运行时读取annotations进行反射，所以可能影响应用性能，而AndroidAnnotations在编译时生成子类，所以对性能没有影响
+
+<a href="#dependency-injections" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ### Networking
 #### [Android Lite Http](http://litesuits.com/) 
 **Repository**: [https://github.com/litesuits/android-lite-http](https://github.com/litesuits/android-lite-http)  
@@ -115,12 +131,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [https://github.com/etao-open-source/cube-sdk](https://github.com/etao-open-source/cube-sdk)  
 **Description**: 一淘开源的一款Android开发包，包括图片加载和网络请求服务，综合了Android-Universal-Image-Loader和square等组件优点。  
 **Features**:  
-1. 图片加载  
 * 使用简单
 * 加载速度快，节省资源
 * 方便定制和改造
-* 图片复用  
-2. 接口请求    
+* 图片复用      
 * 只关注请求结果，专注于业务
 * 请求缓存 / 本地预设请求数据
 * 简单的JsonData，轻松访问接口数据
@@ -170,11 +184,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 图片可以缓存在内存中，或者设备文件目录下，或者SD卡中
 * 可以监听加载进度
 * 可以自定义显示每一张图片时都带不同参数
-* 支持Widget      
+* 支持Widget  
+    
 **Used By**:  
 [Applications using](https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader)
 
 <a href="#image-loader" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
