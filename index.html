@@ -38,6 +38,15 @@
 
 <ul>
 <li>
+<a href="#dependency-injections">Dependency Injections</a>
+
+<ul>
+<li><a href="#androidannotations">AndroidAnnotations</a></li>
+<li><a href="#butter-knife">Butter Knife</a></li>
+<li><a href="#dagger">Dagger</a></li>
+</ul>
+</li>
+<li>
 <a href="#networking">Networking</a>
 
 <ul>
@@ -50,10 +59,84 @@
 <li><a href="#okhttp">OkHttp</a></li>
 <li><a href="#retrofit">Retrofit</a></li>
 <li><a href="#volley">Volley</a></li>
-<li><a href="#volley_okHttp_android">Volley OkHttp Android</a></li>
+<li><a href="#volley_okhttp_android">Volley OkHttp Android</a></li>
+</ul>
+</li>
+<li>
+<a href="#image-loader">Image Loader</a>
+
+<ul>
+<li><a href="#cube-sdk">Cube SDK</a></li>
+<li><a href="#glide">Glide</a></li>
+<li><a href="#imagecache">ImageCache</a></li>
+<li><a href="#picasso">Picasso</a></li>
+<li><a href="#universal-image-loader-for-android">Universal Image Loader for Android</a></li>
 </ul>
 </li>
 </ul>
+
+<h3>
+<a id="dependency-injections" class="anchor" href="#dependency-injections" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependency Injections</h3>
+
+<h4>
+<a id="androidannotations" class="anchor" href="#androidannotations" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://androidannotations.org/">AndroidAnnotations</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/excilys/androidannotations">https://github.com/excilys/androidannotations</a><br>
+<strong>Description</strong>: android快速开发框架。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>依赖注入：包括view，extras，系统服务，资源等等</li>
+<li>简单的线程模型，通过annotation表示方法运行在ui线程还是后台线程</li>
+<li>事件绑定：通过annotation表示view的响应事件，不用在写内部类</li>
+<li>REST客户端：定义客户端接口，自动生成REST请求的实现</li>
+<li>没有你想象的复杂：AndroidAnnotations只是在在编译时生成相应子类</li>
+<li>不影响应用性能：仅50kb，在编译时完成，不会对运行时有性能影响。<br>
+</li>
+</ul>
+
+<blockquote>
+<p>PS：与roboguice的比较：roboguice通过运行时读取annotations进行反射，所以可能影响应用性能，而AndroidAnnotations在编译时生成子类，所以对性能没有影响。  </p>
+</blockquote>
+
+<h4>
+<a id="butter-knife" class="anchor" href="#butter-knife" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://jakewharton.github.io/butterknife/">Butter Knife</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/JakeWharton/butterknife">https://github.com/JakeWharton/butterknife</a><br>
+<strong>Description</strong>: JakeWharton的开源作品，利用annotation帮你快速完成View的初始化，减少代码。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>支持 Activity 中的 View 注入</li>
+<li>支持 View 中的 View 注入</li>
+<li>支持 View 事件回调函数注入</li>
+</ul>
+
+<h4>
+<a id="dagger" class="anchor" href="#dagger" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://square.github.io/dagger/">Dagger</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/square/dagger">https://github.com/square/dagger</a><br>
+<strong>Description</strong>: sqaure开源的依赖注入框架，是Guice的一个子集，更轻量，更适合在Android平台使用。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>使用 JSR-330标准注解进行构造器注入</li>
+<li>使用<a href="https://github.com/Provides" class="user-mention">@Provides</a>注解创建对象</li>
+<li>针对依赖树的中心上下文</li>
+<li>昂贵资源延迟注入</li>
+<li>同一接口的多种实现</li>
+<li>静态注入 (针对遗留环境)</li>
+<li>绑定的编译时验证</li>
+</ul>
+
+<blockquote>
+<p>依赖注入框架的对比：<a href="http://stackoverflow.com/questions/24351817/dagger-and-butter-knife-vs-android-annotations">dagger-and-butter-knife-vs-android-annotations</a>,<a href="http://blog.csdn.net/tryit1993/article/details/40210687">依赖注入浅析</a></p>
+</blockquote>
+
+<p><a href="#dependency-injections" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
 
 <h3>
 <a id="networking" class="anchor" href="#networking" aria-hidden="true"><span class="octicon octicon-link"></span></a>Networking</h3>
@@ -158,14 +241,14 @@
 <strong>Description</strong>: Square开源的http库，支持http和spdy协议.<br>
 <strong>Features</strong>:</p>
 
-<ol>
+<ul>
 <li>支持HTTP2和<a href="http://zh.wikipedia.org/wiki/SPDY">SPDY</a>
 </li>
 <li>如果SPDY不可用，利用连接池减少请求延迟</li>
 <li>使用GZIP压缩</li>
 <li>Response缓存减少不必要的请求<br>
 </li>
-</ol>
+</ul>
 
 <h4>
 <a id="retrofit" class="anchor" href="#retrofit" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://square.github.io/retrofit/">Retrofit</a>
@@ -182,7 +265,7 @@
 <strong>Description</strong>: Google提供的网络通信库，使得网络请求更简单、更快速<br>
 <strong>Features</strong>:  </p>
 
-<ol>
+<ul>
 <li>JSON，图像等的异步下载</li>
 <li>网络请求的排序</li>
 <li>网络请求的优先级处理</li>
@@ -191,7 +274,7 @@
 <li>和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）</li>
 <li>
 <a href="http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf">More</a> </li>
-</ol>
+</ul>
 
 <h4>
 <a id="volley-okhttp-android" class="anchor" href="#volley-okhttp-android" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/lxdvs/Volley-OkHttp-Android/">Volley OkHttp Android</a>
@@ -201,6 +284,105 @@
 <strong>Description</strong>: 整合OkHttp和Volley。 </p>
 
 <p><a href="#networking" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
+
+<h3>
+<a id="image-loader" class="anchor" href="#image-loader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Image Loader</h3>
+
+<h4>
+<a id="cube-sdk" class="anchor" href="#cube-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://cube-sdk.liaohuqiu.net/">Cube SDK</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/etao-open-source/cube-sdk">https://github.com/etao-open-source/cube-sdk</a><br>
+<strong>Description</strong>: 一淘开源的一款Android开发包，包括图片加载和网络请求服务，综合了Android-Universal-Image-Loader和square等组件优点。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>使用简单</li>
+<li>加载速度快，节省资源</li>
+<li>方便定制和改造</li>
+<li>图片复用<br>
+</li>
+<li>只关注请求结果，专注于业务</li>
+<li>请求缓存 / 本地预设请求数据</li>
+<li>简单的JsonData，轻松访问接口数据</li>
+<li>基于Fragment的UI框架</li>
+<li>屏幕尺寸信息</li>
+<li>网络状态信息</li>
+</ul>
+
+<h4>
+<a id="glide" class="anchor" href="#glide" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/bumptech/glide">Glide</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/bumptech/glide">https://github.com/bumptech/glide</a><br>
+<strong>Description</strong>: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>GIF动画的解码</li>
+<li>本地视频剧照的解码</li>
+<li>Activity生命周期的集成</li>
+<li>转码的支持</li>
+<li>动画的支持</li>
+<li>OkHttp和Volley的支持</li>
+<li>其他功能：图片加载过程中占位符等</li>
+</ul>
+
+<h4>
+<a id="imagecache" class="anchor" href="#imagecache" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://www.trinea.cn/android/android-imagecache/">ImageCache</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/Trinea/AndroidCommon">https://github.com/Trinea/AndroidCommon</a><br>
+<strong>Description</strong>: Trinea开源的图片缓存，包含内存和Sdcard缓存。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li> 支持预取新图片，支持等待队列</li>
+<li> 包含二级缓存，可自定义文件名保存规则</li>
+<li> 可选择多种缓存算法(FIFO、LIFO、LRU、MRU、LFU、MFU等13种)或自定义缓存算法</li>
+<li> 可方便的保存及初始化恢复数据</li>
+<li> 支持不同类型网络处理</li>
+<li> 可根据系统配置初始化缓存等</li>
+</ul>
+
+<h4>
+<a id="picasso" class="anchor" href="#picasso" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://square.github.io/picasso/">Picasso</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/square/picasso">https://github.com/square/picasso</a><br>
+<strong>Description</strong>: square开源的图片缓存。<br>
+<strong>Features</strong>:   </p>
+
+<ul>
+<li> 可以自动检测adapter的重用并取消之前的下载</li>
+<li> 图片变换</li>
+<li> 可以加载本地资源</li>
+<li> 可以设置占位资源</li>
+<li> 支持debug模式</li>
+</ul>
+
+<h4>
+<a id="universal-image-loader-for-android" class="anchor" href="#universal-image-loader-for-android" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/nostra13/Android-Universal-Image-Loader">Universal Image Loader for Android</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/nostra13/Android-Universal-Image-Loader">https://github.com/nostra13/Android-Universal-Image-Loader</a><br>
+<strong>Description</strong>: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。<br>
+<strong>Features</strong>:   </p>
+
+<ul>
+<li>多线程图片加载(同步或者异步)</li>
+<li>尽可能多的配置选项（线程池，加载器，解析器，内存/磁盘缓存，显示参数等等）</li>
+<li>图片可以缓存在内存中，或者设备文件目录下，或者SD卡中</li>
+<li>可以监听加载进度</li>
+<li>可以自定义显示每一张图片时都带不同参数</li>
+<li>支持Widget<br>
+</li>
+</ul>
+
+<p><strong>Used By</strong>:<br>
+<a href="https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader">Applications using</a></p>
+
+<p><a href="#image-loader" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
 
 <h2>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
