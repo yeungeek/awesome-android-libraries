@@ -42,15 +42,15 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
   * [Thousands more apps…](http://www.appbrain.com/stats/libraries/details/loopj_asynchttpclient/android-asynchronous-http-client)
 
 **Features**:
-  1. 在匿名回调中处理请求结果
-  2. 在UI线程外进行http请求
-  3. 请求使用ThreadPool来处理并非资源的使用
-  4. 文件断点上传
-  5. 智能重试
-  6. 默认gzip压缩
-  7. 内置Json解析
-  8. 可将Cookies持久化到SharedPreferences
-  9. [More](https://github.com/loopj/android-async-http#features)
+* 在匿名回调中处理请求结果
+* 在UI线程外进行http请求
+* 请求使用ThreadPool来处理并非资源的使用
+* 文件断点上传
+* 智能重试
+* 默认gzip压缩
+* 内置Json解析
+* 可将Cookies持久化到SharedPreferences
+* [More](https://github.com/loopj/android-async-http#features)
 
 #### [Async Http Client](https://asynchttpclient.github.io/async-http-client/)  
 **Repository**: [https://github.com/AsyncHttpClient/async-http-client](https://github.com/AsyncHttpClient/async-http-client)  
