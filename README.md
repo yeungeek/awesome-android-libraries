@@ -12,6 +12,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Retrofit](#retrofit)
 	* [Volley](#volley)
 	* [Volley OkHttp Android](#volley_okHttp_android)
+* [Image Loader](#image-loader)
+    * 
 
 ### Networking
 #### [Android Lite Http](http://litesuits.com/) 
@@ -78,10 +80,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [https://github.com/square/okhttp](https://github.com/square/okhttp)  
 **Description**: Square开源的http库，支持http和spdy协议.  
 **Features**:
-  1. 支持HTTP2和[SPDY](http://zh.wikipedia.org/wiki/SPDY)
-  2. 如果SPDY不可用，利用连接池减少请求延迟
-  3. 使用GZIP压缩
-  4. Response缓存减少不必要的请求  
+* 支持HTTP2和[SPDY](http://zh.wikipedia.org/wiki/SPDY)
+* 如果SPDY不可用，利用连接池减少请求延迟
+* 使用GZIP压缩
+* Response缓存减少不必要的请求  
   
 #### [Retrofit](http://square.github.io/retrofit/) 
 **Repository**: [https://github.com/square/retrofit](https://github.com/square/retrofit)  
@@ -91,17 +93,67 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [google volley](https://android.googlesource.com/platform/frameworks/volley) | [https://github.com/mcxiaoke/android-volley](https://github.com/mcxiaoke/android-volley)  
 **Description**: Google提供的网络通信库，使得网络请求更简单、更快速  
 **Features**:  
-  1. JSON，图像等的异步下载
-  2. 网络请求的排序
-  3. 网络请求的优先级处理
-  4. 缓存 
-  5. 多级别取消请求
-  6. 和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）
-  7. [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf) 
+* JSON，图像等的异步下载
+* 网络请求的排序
+* 网络请求的优先级处理
+* 缓存 
+* 多级别取消请求
+* 和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）
+* [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf) 
 
 #### [Volley OkHttp Android](https://github.com/lxdvs/Volley-OkHttp-Android/)  
 **Repository**: [https://github.com/lxdvs/Volley-OkHttp-Android](https://github.com/lxdvs/Volley-OkHttp-Android)  
 **Description**: 整合OkHttp和Volley。 
+
+<a href="#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+### Image Loader
+#### [Cube SDK](http://cube-sdk.liaohuqiu.net/)
+**Repository**: [https://github.com/etao-open-source/cube-sdk](https://github.com/etao-open-source/cube-sdk)  
+**Description**: 一淘开源的一款Android开发包，包括图片加载和网络请求服务，综合了Android-Universal-Image-Loader和square等组件优点。  
+**Features**:  
+1. 图片加载  
+* 使用简单
+* 加载速度快，节省资源
+* 方便定制和改造
+* 图片复用
+2. 接口请求  
+* 只关注请求结果，专注于业务
+* 请求缓存 / 本地预设请求数据
+* 简单的JsonData，轻松访问接口数据
+* 基于Fragment的UI框架
+* 屏幕尺寸信息
+* 网络状态信息
+#### [Glide](https://github.com/bumptech/glide)
+**Repository**: [https://github.com/bumptech/glide](https://github.com/bumptech/glide)  
+**Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。    
+**Features**:  
+[Gradle特性](http://www.infoq.com/cn/news/2014/09/android-glide)
+#### [ImageCache](http://www.trinea.cn/android/android-imagecache/)
+**Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
+**Description**: Trinea开源的图片缓存，包含内存和Sdcard缓存。   
+**Features**:  
+*  支持预取新图片，支持等待队列
+*  包含二级缓存，可自定义文件名保存规则
+*  可选择多种缓存算法(FIFO、LIFO、LRU、MRU、LFU、MFU等13种)或自定义缓存算法
+*  可方便的保存及初始化恢复数据
+*  支持不同类型网络处理
+*  可根据系统配置初始化缓存等
+
+#### [Picasso](http://square.github.io/picasso/)
+**Repository**: [https://github.com/square/picasso](https://github.com/square/picasso)  
+**Description**: square开源的图片缓存。   
+**Features**:   
+*  可以自动检测adapter的重用并取消之前的下载
+*  图片变换
+*  可以加载本地资源
+*  可以设置占位资源
+*  支持debug模式
+
+#### [Universal Image Loader for Android](https://github.com/nostra13/Android-Universal-Image-Loader)
+**Repository**: [https://github.com/nostra13/Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)  
+**Description**: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。  
+**Features**:   
+[features](https://github.com/nostra13/Android-Universal-Image-Loader#features) 
 
 <a href="#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ## Reference
