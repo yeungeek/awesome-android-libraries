@@ -119,10 +119,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 使用简单
 * 加载速度快，节省资源
 * 方便定制和改造
-* 图片复用
-
-2. 接口请求  
-
+* 图片复用  
+2. 接口请求    
 * 只关注请求结果，专注于业务
 * 请求缓存 / 本地预设请求数据
 * 简单的JsonData，轻松访问接口数据
@@ -172,7 +170,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 图片可以缓存在内存中，或者设备文件目录下，或者SD卡中
 * 可以监听加载进度
 * 可以自定义显示每一张图片时都带不同参数
-* 支持Widget    
+* 支持Widget      
 **Used By**:  
 [Applications using](https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader)
 
