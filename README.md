@@ -11,9 +11,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [OkHttp](#okhttp)
 	* [Retrofit](#retrofit)
 	* [Volley](#volley)
-	* [Volley OkHttp Android](#volley_okHttp_android)
+	* [Volley OkHttp Android](#volley_okhttp_android)
 * [Image Loader](#image-loader)
-    * 
+    * [Cube SDK](#cube-sdk)
+    * [Glide](glide)
+    * [ImageCache](imagecache)
+    * [Picasso](picasso)
+    * [Universal Image Loader for Android](universal-image-loader-for-android)
 
 ### Networking
 #### [Android Lite Http](http://litesuits.com/) 
@@ -123,11 +127,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 基于Fragment的UI框架
 * 屏幕尺寸信息
 * 网络状态信息
+
 #### [Glide](https://github.com/bumptech/glide)
 **Repository**: [https://github.com/bumptech/glide](https://github.com/bumptech/glide)  
 **Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。    
 **Features**:  
 [Gradle特性](http://www.infoq.com/cn/news/2014/09/android-glide)
+
 #### [ImageCache](http://www.trinea.cn/android/android-imagecache/)
 **Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
 **Description**: Trinea开源的图片缓存，包含内存和Sdcard缓存。   
@@ -153,7 +159,9 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [https://github.com/nostra13/Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)  
 **Description**: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。  
 **Features**:   
-[features](https://github.com/nostra13/Android-Universal-Image-Loader#features) 
+[features](https://github.com/nostra13/Android-Universal-Image-Loader#features)  
+**Used By**:  
+[Applications using](https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader)
 
 <a href="#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ## Reference
