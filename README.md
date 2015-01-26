@@ -120,7 +120,9 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 加载速度快，节省资源
 * 方便定制和改造
 * 图片复用
+
 2. 接口请求  
+
 * 只关注请求结果，专注于业务
 * 请求缓存 / 本地预设请求数据
 * 简单的JsonData，轻松访问接口数据
@@ -132,7 +134,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [https://github.com/bumptech/glide](https://github.com/bumptech/glide)  
 **Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。    
 **Features**:  
-[Gradle特性](http://www.infoq.com/cn/news/2014/09/android-glide)
+* GIF动画的解码
+* 本地视频剧照的解码
+* Activity生命周期的集成
+* 转码的支持
+* 动画的支持
+* OkHttp和Volley的支持
+* 其他功能：图片加载过程中占位符等
 
 #### [ImageCache](http://www.trinea.cn/android/android-imagecache/)
 **Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
@@ -159,11 +167,16 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Repository**: [https://github.com/nostra13/Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)  
 **Description**: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。  
 **Features**:   
-[features](https://github.com/nostra13/Android-Universal-Image-Loader#features)  
+* 多线程图片加载(同步或者异步)
+* 尽可能多的配置选项（线程池，加载器，解析器，内存/磁盘缓存，显示参数等等）
+* 图片可以缓存在内存中，或者设备文件目录下，或者SD卡中
+* 可以监听加载进度
+* 可以自定义显示每一张图片时都带不同参数
+* 支持Widget    
 **Used By**:  
 [Applications using](https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader)
 
-<a href="#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+<a href="#image-loader" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
