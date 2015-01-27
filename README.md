@@ -229,6 +229,44 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 <a href="#image-loader" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
+### O/R Mapping
+[5个推荐的orm框架](http://www.sitepoint.com/5-best-android-orms/)
+#### [ActiveAndroid](http://www.activeandroid.com/)
+**Repository**: [https://github.com/pardom/ActiveAndroid](https://github.com/pardom/ActiveAndroid)  
+**Description**: ActiveAndroid是一个轻量级的orm框架，名称命令方式类似于Yii、Rails等使用的orm框架ActiveRecord。  
+#### [GreenDAO](http://greendao-orm.com/)
+**Repository**: [https://github.com/greenrobot/greenDAO](https://github.com/greenrobot/greenDAO)  
+**Description**: GreenDAO是一个轻量级，快速的orm框架。简化建表、查询、更新、插入、事务、索引的操作。  
+**Features**:   
+* 性能突出(比ormlite快4-5倍), [performance](http://greendao-orm.com/2011/10/23/current-performance-figures/)  
+* 库小，核心包小于100k
+* 简单易用的API
+* 支持protobuf
+* 自动生成数据库访问代码
+
+#### [OrmLite-Android](http://ormlite.com/sqlite_java_android_orm.shtml)
+**Repository**: [https://github.com/j256/ormlite-android](https://github.com/j256/ormlite-android)  
+**Description**: OrmLite不是Android平台专用的orm框架，它是一个Java orm，OrmLite For Android增加了对Android平台的支持。  
+#### [Realm](http://realm.io/)  
+**Repository**: [https://github.com/realm/realm-java](https://github.com/realm/realm-java)  
+**Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。 
+**Features**:   
+* 着重移动端
+* 简单易用的API
+* 支持线程安全，关系数据库和加密
+* 访问快速
+* 跨平台
+
+### [Sugar ORM](http://satyan.github.com/sugar/)  
+**Repository**: [https://github.com/satyan/sugar](https://github.com/satyan/sugar)  
+**Description**: Android平台专用orm框架。  
+**Features**:   
+* 配置少
+* 自动生成表结构
+* 支持在不同模式版本直接切换
+
+<a href="#image-loader" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
