@@ -1,4 +1,6 @@
 # Android开源框架分类
+
+[![Join the chat at https://gitter.im/yeungeek/awesome-android-libraries](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yeungeek/awesome-android-libraries?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
 ##Index
 * [Dependency Injections](#dependency-injections)
