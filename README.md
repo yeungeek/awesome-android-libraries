@@ -1,6 +1,6 @@
 # Android开源框架分类
-Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。   
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yeungeek/awesome-android-libraries?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)   
+Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yeungeek/awesome-android-libraries?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 ##Index
 * [Dependency Injections](#dependency-injections)
     * [AndroidAnnotations](#androidannotations)
@@ -18,6 +18,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 	* [Volley](#volley)
 	* [Volley OkHttp Android](#volley_okhttp_android)
 * [Image Loader](#image-loader)
+    * [Fresco](#fresco)
     * [Cube SDK](#cube-sdk)
     * [Glide](#glide)
     * [ImageCache](#imagecache)
@@ -80,7 +81,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 <a href="#dependency-injections" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ### Networking
-#### [Android Lite Http](http://litesuits.com/) 
+#### [Android Lite Http](http://litesuits.com/)
 **Repository**: [https://github.com/litesuits/android-lite-http](https://github.com/litesuits/android-lite-http)  
 **Description**: 一款‘智能’的HTTP框架类库。国人开发的一套框架。  
 **Features**:  
@@ -96,9 +97,9 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 通过网络探测完成智能重试 ，对复杂的、信号不良的的移动网络做特殊的优化。
 * 禁用一种或多种网络, 比如2G，3G。
 * 简明且统一的异常处理体系：清晰、准确的抛出客户端、网络、服务器三种异常。
-* 内置的AsyncExecutor可以让你轻松实现异步和并发的http请求，如果你喜欢，随意使用你自己的AsyncTask或Thread来完成异步，推荐使用更强大、高效的专业并发库。 
+* 内置的AsyncExecutor可以让你轻松实现异步和并发的http请求，如果你喜欢，随意使用你自己的AsyncTask或Thread来完成异步，推荐使用更强大、高效的专业并发库。
 
-#### [Asynchronous Http Client for Android](http://loopj.com/android-async-http/) 
+#### [Asynchronous Http Client for Android](http://loopj.com/android-async-http/)
 **Repository**: [https://github.com/loopj/android-async-http](https://github.com/loopj/android-async-http)  
 **Description**: Android异步Http请求  
 **Used By**:
@@ -120,10 +121,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 #### [Async Http Client](https://asynchttpclient.github.io/async-http-client/)  
 **Repository**: [https://github.com/AsyncHttpClient/async-http-client](https://github.com/AsyncHttpClient/async-http-client)  
-**Description**: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于[Netty]()之上。 
-#### [HttpCache](http://www.trinea.cn/android/android-http-cache) 
+**Description**: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于[Netty]()之上。
+#### [HttpCache](http://www.trinea.cn/android/android-http-cache)
 **Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
-**Description**: [Trinea](https://github.com/Trinea)大神写的Http缓存工具。 
+**Description**: [Trinea](https://github.com/Trinea)大神写的Http缓存工具。
 **Features**:
 * 根据cache-control、expires缓存http请求
 * 支持同步、异步Http请求
@@ -131,13 +132,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 在UI线程外进行http请求
 * 默认gzip压缩
 
-#### [Http Request](https://github.com/kevinsawicki/http-request) 
+#### [Http Request](https://github.com/kevinsawicki/http-request)
 **Repository**: [https://github.com/kevinsawicki/http-request](https://github.com/kevinsawicki/http-request)  
-**Description**: Java HTTP请求库。 
+**Description**: Java HTTP请求库。
 
 #### [Ion](https://github.com/koush/ion)
 **Repository**: https://github.com/koush/ion  
-**Description**: Android异步网络和图片加载.   
+**Description**: Android异步网络和图片加载.
 **Used By**: [https://github.com/koush/ion#projects-using-ion](https://github.com/koush/ion#projects-using-ion)  
 **Features**: [https://github.com/koush/ion#features](https://github.com/koush/ion#features)  
 #### [OkHttp](http://square.github.io/okhttp/)  
@@ -148,10 +149,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 如果SPDY不可用，利用连接池减少请求延迟
 * 使用GZIP压缩
 * Response缓存减少不必要的请求  
-  
-#### [Retrofit](http://square.github.io/retrofit/) 
+
+#### [Retrofit](http://square.github.io/retrofit/)
 **Repository**: [https://github.com/square/retrofit](https://github.com/square/retrofit)  
-**Description**: Square开源的Android和Java的REST风格请求库. 
+**Description**: Square开源的Android和Java的REST风格请求库.
 
 #### [Volley](https://android.googlesource.com/platform/frameworks/volley)
 **Repository**: [google volley](https://android.googlesource.com/platform/frameworks/volley) | [https://github.com/mcxiaoke/android-volley](https://github.com/mcxiaoke/android-volley)  
@@ -160,17 +161,32 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * JSON，图像等的异步下载
 * 网络请求的排序
 * 网络请求的优先级处理
-* 缓存 
+* 缓存
 * 多级别取消请求
 * 和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）
-* [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf) 
+* [More](http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf)
 
 #### [Volley OkHttp Android](https://github.com/lxdvs/Volley-OkHttp-Android/)  
 **Repository**: [https://github.com/lxdvs/Volley-OkHttp-Android](https://github.com/lxdvs/Volley-OkHttp-Android)  
-**Description**: 整合OkHttp和Volley。 
+**Description**: 整合OkHttp和Volley。
 
 <a href="#networking" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 ### Image Loader
+#### [Fresco](http://frescolib.org/)
+**Repository**:
+* [https://github.com/facebook/fresco](https://github.com/facebook/fresco)  
+* [http://fresco-cn.org/](http://fresco-cn.org/)  
+
+**Description**:
+Facebook 开源的一个强大的图片加载组件。  
+**Features**:  
+* 内存管理，两个内存缓存加上磁盘缓存构成了三级缓存
+* 支持流式，图片的渐进式呈现
+* 支持Gif图和WebP格式
+* 更多样的显示，如圆角、进度条、点击重试、自定义对焦点
+* 支持Android2.3+
+
+
 #### [Cube SDK](http://cube-sdk.liaohuqiu.net/)
 **Repository**: [https://github.com/etao-open-source/cube-sdk](https://github.com/etao-open-source/cube-sdk)  
 **Description**: 一淘开源的一款Android开发包，包括图片加载和网络请求服务，综合了Android-Universal-Image-Loader和square等组件优点。  
@@ -178,7 +194,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 * 使用简单
 * 加载速度快，节省资源
 * 方便定制和改造
-* 图片复用      
+* 图片复用
 * 只关注请求结果，专注于业务
 * 请求缓存 / 本地预设请求数据
 * 简单的JsonData，轻松访问接口数据
@@ -188,7 +204,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 #### [Glide](https://github.com/bumptech/glide)
 **Repository**: [https://github.com/bumptech/glide](https://github.com/bumptech/glide)  
-**Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。    
+**Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。
 **Features**:  
 * GIF动画的解码
 * 本地视频剧照的解码
@@ -200,7 +216,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 #### [ImageCache](http://www.trinea.cn/android/android-imagecache/)
 **Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
-**Description**: Trinea开源的图片缓存，包含内存和Sdcard缓存。   
+**Description**: Trinea开源的图片缓存，包含内存和Sdcard缓存。
 **Features**:  
 *  支持预取新图片，支持等待队列
 *  包含二级缓存，可自定义文件名保存规则
@@ -211,8 +227,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 
 #### [Picasso](http://square.github.io/picasso/)
 **Repository**: [https://github.com/square/picasso](https://github.com/square/picasso)  
-**Description**: square开源的图片缓存。   
-**Features**:   
+**Description**: square开源的图片缓存。
+**Features**:
 *  可以自动检测adapter的重用并取消之前的下载
 *  图片变换
 *  可以加载本地资源
@@ -222,14 +238,14 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 #### [Universal Image Loader for Android](https://github.com/nostra13/Android-Universal-Image-Loader)
 **Repository**: [https://github.com/nostra13/Android-Universal-Image-Loader](https://github.com/nostra13/Android-Universal-Image-Loader)  
 **Description**: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。  
-**Features**:   
+**Features**:
 * 多线程图片加载(同步或者异步)
 * 尽可能多的配置选项（线程池，加载器，解析器，内存/磁盘缓存，显示参数等等）
 * 图片可以缓存在内存中，或者设备文件目录下，或者SD卡中
 * 可以监听加载进度
 * 可以自定义显示每一张图片时都带不同参数
 * 支持Widget  
-    
+
 **Used By**:  
 [Applications using](https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader)
 
@@ -243,7 +259,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 #### [GreenDAO](http://greendao-orm.com/)
 **Repository**: [https://github.com/greenrobot/greenDAO](https://github.com/greenrobot/greenDAO)  
 **Description**: GreenDAO是一个轻量级，快速的orm框架。简化建表、查询、更新、插入、事务、索引的操作。  
-**Features**:   
+**Features**:
 * 性能突出(比ormlite快4-5倍), [performance](http://greendao-orm.com/2011/10/23/current-performance-figures/)  
 * 库小，核心包小于100k
 * 简单易用的API
@@ -255,8 +271,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Description**: OrmLite不是Android平台专用的orm框架，它是一个Java orm，OrmLite For Android增加了对Android平台的支持。  
 #### [Realm](http://realm.io/)  
 **Repository**: [https://github.com/realm/realm-java](https://github.com/realm/realm-java)  
-**Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。 
-**Features**:   
+**Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。
+**Features**:
 * 着重移动端
 * 简单易用的API
 * 支持线程安全，关系数据库和加密
@@ -266,7 +282,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 ### [Sugar ORM](http://satyan.github.com/sugar/)  
 **Repository**: [https://github.com/satyan/sugar](https://github.com/satyan/sugar)  
 **Description**: Android平台专用orm框架。  
-**Features**:   
+**Features**:
 * 配置少
 * 自动生成表结构
 * 支持在不同模式版本直接切换
