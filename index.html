@@ -31,7 +31,8 @@
           <h1>
 <a id="android开源框架分类" class="anchor" href="#android%E5%BC%80%E6%BA%90%E6%A1%86%E6%9E%B6%E5%88%86%E7%B1%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>Android开源框架分类</h1>
 
-<p>Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。</p>
+<p>Android开源框架库分类，挑选出最常用，最实用的开源项目，本篇主要介绍的是优秀开源框架库和项目，UI个性化控件会独立介绍。
+<a href="https://gitter.im/yeungeek/awesome-android-libraries?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a></p>
 
 <h2>
 <a id="index" class="anchor" href="#index" aria-hidden="true"><span class="octicon octicon-link"></span></a>Index</h2>
@@ -66,6 +67,7 @@
 <a href="#image-loader">Image Loader</a>
 
 <ul>
+<li><a href="#fresco">Fresco</a></li>
 <li><a href="#cube-sdk">Cube SDK</a></li>
 <li><a href="#glide">Glide</a></li>
 <li><a href="#imagecache">ImageCache</a></li>
@@ -73,6 +75,29 @@
 <li><a href="#universal-image-loader-for-android">Universal Image Loader for Android</a></li>
 </ul>
 </li>
+<li>
+<a href="#or-mapping">O/R Mapping</a>
+
+<ul>
+<li><a href="#activeandroid">ActiveAndroid</a></li>
+<li><a href="#greendao">GreenDAO</a></li>
+<li><a href="#ormlite-android">OrmLite-Android</a></li>
+<li><a href="#realm">Realm</a></li>
+<li><a href="#sugar-orm">Sugar ORM</a></li>
+</ul>
+</li>
+<li>[Event Buses]</li>
+<li>[JSON]</li>
+<li>[Backward Compatibility]</li>
+<li>[Background Processing]</li>
+<li>[Image Processing]</li>
+<li>[Camera]</li>
+<li>[Video]</li>
+<li>[Logging]</li>
+<li>[Android Plugin]</li>
+<li>[NoSQL]</li>
+<li>[Security]</li>
+<li>[Showcases]</li>
 </ul>
 
 <h3>
@@ -162,7 +187,7 @@
 <li>通过网络探测完成智能重试 ，对复杂的、信号不良的的移动网络做特殊的优化。</li>
 <li>禁用一种或多种网络, 比如2G，3G。</li>
 <li>简明且统一的异常处理体系：清晰、准确的抛出客户端、网络、服务器三种异常。</li>
-<li>内置的AsyncExecutor可以让你轻松实现异步和并发的http请求，如果你喜欢，随意使用你自己的AsyncTask或Thread来完成异步，推荐使用更强大、高效的专业并发库。 </li>
+<li>内置的AsyncExecutor可以让你轻松实现异步和并发的http请求，如果你喜欢，随意使用你自己的AsyncTask或Thread来完成异步，推荐使用更强大、高效的专业并发库。</li>
 </ul>
 
 <h4>
@@ -199,14 +224,14 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/AsyncHttpClient/async-http-client">https://github.com/AsyncHttpClient/async-http-client</a><br>
-<strong>Description</strong>: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于<a href="">Netty</a>之上。 </p>
+<strong>Description</strong>: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于<a href="">Netty</a>之上。</p>
 
 <h4>
 <a id="httpcache" class="anchor" href="#httpcache" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://www.trinea.cn/android/android-http-cache">HttpCache</a>
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/Trinea/AndroidCommon">https://github.com/Trinea/AndroidCommon</a><br>
-<strong>Description</strong>: <a href="https://github.com/Trinea">Trinea</a>大神写的Http缓存工具。 
+<strong>Description</strong>: <a href="https://github.com/Trinea">Trinea</a>大神写的Http缓存工具。
 <strong>Features</strong>:</p>
 
 <ul>
@@ -222,14 +247,14 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/kevinsawicki/http-request">https://github.com/kevinsawicki/http-request</a><br>
-<strong>Description</strong>: Java HTTP请求库。 </p>
+<strong>Description</strong>: Java HTTP请求库。</p>
 
 <h4>
 <a id="ion" class="anchor" href="#ion" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://github.com/koush/ion">Ion</a>
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/koush/ion">https://github.com/koush/ion</a><br>
-<strong>Description</strong>: Android异步网络和图片加载.<br>
+<strong>Description</strong>: Android异步网络和图片加载.
 <strong>Used By</strong>: <a href="https://github.com/koush/ion#projects-using-ion">https://github.com/koush/ion#projects-using-ion</a><br>
 <strong>Features</strong>: <a href="https://github.com/koush/ion#features">https://github.com/koush/ion#features</a>  </p>
 
@@ -255,7 +280,7 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/square/retrofit">https://github.com/square/retrofit</a><br>
-<strong>Description</strong>: Square开源的Android和Java的REST风格请求库. </p>
+<strong>Description</strong>: Square开源的Android和Java的REST风格请求库.</p>
 
 <h4>
 <a id="volley" class="anchor" href="#volley" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://android.googlesource.com/platform/frameworks/volley">Volley</a>
@@ -269,11 +294,10 @@
 <li>JSON，图像等的异步下载</li>
 <li>网络请求的排序</li>
 <li>网络请求的优先级处理</li>
-<li>缓存 </li>
+<li>缓存</li>
 <li>多级别取消请求</li>
 <li>和Activity和生命周期的联动（Activity结束时同时取消所有网络请求）</li>
-<li>
-<a href="http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf">More</a> </li>
+<li><a href="http://commondatastorage.googleapis.com/io-2013/presentations/110%20-%20Volley-%20Easy,%20Fast%20Networking%20for%20Android.pdf">More</a></li>
 </ul>
 
 <h4>
@@ -281,12 +305,39 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/lxdvs/Volley-OkHttp-Android">https://github.com/lxdvs/Volley-OkHttp-Android</a><br>
-<strong>Description</strong>: 整合OkHttp和Volley。 </p>
+<strong>Description</strong>: 整合OkHttp和Volley。</p>
 
 <p><a href="#networking" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
 
 <h3>
 <a id="image-loader" class="anchor" href="#image-loader" aria-hidden="true"><span class="octicon octicon-link"></span></a>Image Loader</h3>
+
+<h4>
+<a id="fresco" class="anchor" href="#fresco" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://frescolib.org/">Fresco</a>
+</h4>
+
+<p><strong>Repository</strong>:</p>
+
+<ul>
+<li>
+<a href="https://github.com/facebook/fresco">https://github.com/facebook/fresco</a><br>
+</li>
+<li>
+<a href="http://fresco-cn.org/">http://fresco-cn.org/</a><br>
+</li>
+</ul>
+
+<p><strong>Description</strong>:
+Facebook 开源的一个强大的图片加载组件。<br>
+<strong>Features</strong>:  </p>
+
+<ul>
+<li>内存管理，两个内存缓存加上磁盘缓存构成了三级缓存</li>
+<li>支持流式，图片的渐进式呈现</li>
+<li>支持Gif图和WebP格式</li>
+<li>更多样的显示，如圆角、进度条、点击重试、自定义对焦点</li>
+<li>支持Android2.3+</li>
+</ul>
 
 <h4>
 <a id="cube-sdk" class="anchor" href="#cube-sdk" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://cube-sdk.liaohuqiu.net/">Cube SDK</a>
@@ -300,8 +351,7 @@
 <li>使用简单</li>
 <li>加载速度快，节省资源</li>
 <li>方便定制和改造</li>
-<li>图片复用<br>
-</li>
+<li>图片复用</li>
 <li>只关注请求结果，专注于业务</li>
 <li>请求缓存 / 本地预设请求数据</li>
 <li>简单的JsonData，轻松访问接口数据</li>
@@ -315,7 +365,7 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/bumptech/glide">https://github.com/bumptech/glide</a><br>
-<strong>Description</strong>: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。<br>
+<strong>Description</strong>: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。
 <strong>Features</strong>:  </p>
 
 <ul>
@@ -333,7 +383,7 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/Trinea/AndroidCommon">https://github.com/Trinea/AndroidCommon</a><br>
-<strong>Description</strong>: Trinea开源的图片缓存，包含内存和Sdcard缓存。<br>
+<strong>Description</strong>: Trinea开源的图片缓存，包含内存和Sdcard缓存。
 <strong>Features</strong>:  </p>
 
 <ul>
@@ -350,8 +400,8 @@
 </h4>
 
 <p><strong>Repository</strong>: <a href="https://github.com/square/picasso">https://github.com/square/picasso</a><br>
-<strong>Description</strong>: square开源的图片缓存。<br>
-<strong>Features</strong>:   </p>
+<strong>Description</strong>: square开源的图片缓存。
+<strong>Features</strong>:</p>
 
 <ul>
 <li> 可以自动检测adapter的重用并取消之前的下载</li>
@@ -367,7 +417,7 @@
 
 <p><strong>Repository</strong>: <a href="https://github.com/nostra13/Android-Universal-Image-Loader">https://github.com/nostra13/Android-Universal-Image-Loader</a><br>
 <strong>Description</strong>: 应该是使用最多的图片缓存，支持主流图片缓存的绝大多数特性。<br>
-<strong>Features</strong>:   </p>
+<strong>Features</strong>:</p>
 
 <ul>
 <li>多线程图片加载(同步或者异步)</li>
@@ -383,6 +433,74 @@
 <a href="https://github.com/nostra13/Android-Universal-Image-Loader#applications-using-universal-image-loader">Applications using</a></p>
 
 <p><a href="#image-loader" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
+
+<h3>
+<a id="or-mapping" class="anchor" href="#or-mapping" aria-hidden="true"><span class="octicon octicon-link"></span></a>O/R Mapping</h3>
+
+<p><a href="http://www.sitepoint.com/5-best-android-orms/">5个推荐的orm框架</a></p>
+
+<h4>
+<a id="activeandroid" class="anchor" href="#activeandroid" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://www.activeandroid.com/">ActiveAndroid</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/pardom/ActiveAndroid">https://github.com/pardom/ActiveAndroid</a><br>
+<strong>Description</strong>: ActiveAndroid是一个轻量级的orm框架，名称命令方式类似于Yii、Rails等使用的orm框架ActiveRecord。  </p>
+
+<h4>
+<a id="greendao" class="anchor" href="#greendao" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://greendao-orm.com/">GreenDAO</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/greenrobot/greenDAO">https://github.com/greenrobot/greenDAO</a><br>
+<strong>Description</strong>: GreenDAO是一个轻量级，快速的orm框架。简化建表、查询、更新、插入、事务、索引的操作。<br>
+<strong>Features</strong>:</p>
+
+<ul>
+<li>性能突出(比ormlite快4-5倍), <a href="http://greendao-orm.com/2011/10/23/current-performance-figures/">performance</a><br>
+</li>
+<li>库小，核心包小于100k</li>
+<li>简单易用的API</li>
+<li>支持protobuf</li>
+<li>自动生成数据库访问代码</li>
+</ul>
+
+<h4>
+<a id="ormlite-android" class="anchor" href="#ormlite-android" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://ormlite.com/sqlite_java_android_orm.shtml">OrmLite-Android</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/j256/ormlite-android">https://github.com/j256/ormlite-android</a><br>
+<strong>Description</strong>: OrmLite不是Android平台专用的orm框架，它是一个Java orm，OrmLite For Android增加了对Android平台的支持。  </p>
+
+<h4>
+<a id="realm" class="anchor" href="#realm" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://realm.io/">Realm</a>
+</h4>
+
+<p><strong>Repository</strong>: <a href="https://github.com/realm/realm-java">https://github.com/realm/realm-java</a><br>
+<strong>Description</strong>: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。
+<strong>Features</strong>:</p>
+
+<ul>
+<li>着重移动端</li>
+<li>简单易用的API</li>
+<li>支持线程安全，关系数据库和加密</li>
+<li>访问快速</li>
+<li>跨平台</li>
+</ul>
+
+<h3>
+<a id="sugar-orm" class="anchor" href="#sugar-orm" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://satyan.github.com/sugar/">Sugar ORM</a>
+</h3>
+
+<p><strong>Repository</strong>: <a href="https://github.com/satyan/sugar">https://github.com/satyan/sugar</a><br>
+<strong>Description</strong>: Android平台专用orm框架。<br>
+<strong>Features</strong>:</p>
+
+<ul>
+<li>配置少</li>
+<li>自动生成表结构</li>
+<li>支持在不同模式版本直接切换</li>
+</ul>
+
+<p><a href="#or-mapping" title="返回目录"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"></a></p>
 
 <h2>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference</h2>
