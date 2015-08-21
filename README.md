@@ -32,7 +32,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [OrmLite-Android](#ormlite-android)
     * [Realm](#realm)
     * [Sugar ORM](#sugar-orm)
-* [Event Buses]
+* [Event Buses](#event-buses)
+    * [EventBus](#eventbus)
+    * [Otto](#otto)
+    * [AndroidEventBus](#androideventbus)
 * [JSON]
 * [Backward Compatibility]
 * [Background Processing]
@@ -271,6 +274,7 @@ Facebook 开源的一个强大的图片加载组件。
 #### [OrmLite-Android](http://ormlite.com/sqlite_java_android_orm.shtml)
 **Repository**: [https://github.com/j256/ormlite-android](https://github.com/j256/ormlite-android)  
 **Description**: OrmLite不是Android平台专用的orm框架，它是一个Java orm，OrmLite For Android增加了对Android平台的支持。  
+
 #### [Realm](http://realm.io/)  
 **Repository**: [https://github.com/realm/realm-java](https://github.com/realm/realm-java)  
 **Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。
@@ -281,7 +285,7 @@ Facebook 开源的一个强大的图片加载组件。
 * 访问快速
 * 跨平台
 
-### [Sugar ORM](http://satyan.github.com/sugar/)  
+#### [Sugar ORM](http://satyan.github.com/sugar/)  
 **Repository**: [https://github.com/satyan/sugar](https://github.com/satyan/sugar)  
 **Description**: Android平台专用orm框架。  
 **Features**:
@@ -290,6 +294,26 @@ Facebook 开源的一个强大的图片加载组件。
 * 支持在不同模式版本直接切换
 
 <a href="#or-mapping" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+
+### Event Buses
+### [EventBus](https://github.com/greenrobot/EventBus)
+**Repository**: [https://github.com/greenrobot/EventBus](https://github.com/greenrobot/EventBus)
+**Description**: 事件总线框架，非注解，效率非常高，这里是和square的otto的[对比](https://github.com/greenrobot/EventBus/blob/master/COMPARISON.md)。  
+**Features**:  
+* 非注解
+* 便利，以onEvent方法来接收
+* 性能优化，是android上最快的事件总线框架
+* 单例
+* 事件继承  
+
+### [Otto](http://square.github.io/otto/)
+**Repository**: [https://github.com/square/otto](https://github.com/square/otto)  
+**Description**: Square开源的事件总线框架，在Guava基础上加强，基于注解形式。
+
+### [AndroidEventBus](https://github.com/bboyfeiyu/AndroidEventBus)
+**Repository**: [https://github.com/bboyfeiyu/AndroidEventBus](https://github.com/bboyfeiyu/AndroidEventBus)  
+**Description**: [bboyfeiyu](https://github.com/bboyfeiyu)开源的事件总线框架，吸收了greenrobot的EventBus以及square的otto的优点，
+并在此基础上做出了相应的改进，使得事件总线框架更适合用户的使用习惯，也使得事件的投递更加的精准、灵活。
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
