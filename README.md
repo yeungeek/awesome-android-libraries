@@ -36,7 +36,11 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [EventBus](#eventbus)
     * [Otto](#otto)
     * [AndroidEventBus](#androideventbus)
-* [JSON]
+* [JSON](#json)
+    * [fastjson](#fastjson)
+    * [GSON](#gson)
+    * [Jackson](#Jackson)
+    * [Moshi](#moshi)
 * [Backward Compatibility]
 * [Background Processing]
 * [Image Processing]
@@ -277,7 +281,7 @@ Facebook 开源的一个强大的图片加载组件。
 
 #### [Realm](http://realm.io/)  
 **Repository**: [https://github.com/realm/realm-java](https://github.com/realm/realm-java)  
-**Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。
+**Description**: 移动端的数据库，适用于 Phone、Tablet、Wearable，支持 ORM，线程安全、支持连表及数据库加密，比 SQLite 性能更好。  
 **Features**:
 * 着重移动端
 * 简单易用的API
@@ -319,5 +323,29 @@ Facebook 开源的一个强大的图片加载组件。
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
 *  [wasabeef awesome-android-libraries](https://github.com/wasabeef/awesome-android-libraries)
+
+### JSON
+### [fastjson](https://github.com/alibaba/fastjson)
+**Repository**: [https://github.com/alibaba/fastjson](https://github.com/alibaba/fastjson)  
+**Description**: 阿里巴巴开源JSON解析库，是一个Java语言编写的高性能功能完善的JSON库。它采用一种“假定有序快速匹配”的算法，
+把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。[各种JSON库的比较](https://github.com/alibaba/fastjson/wiki/%E5%90%84%E7%A7%8DJSON%E5%BA%93%E7%9A%84%E6%AF%94%E8%BE%83)
+**Features**:  
+* 速度最快，测试表明，fastjson具有极快的性能，超越任其他的java json parser。包括自称最快的jackson
+* 功能强大，完全支持java bean、集合、Map、日期、Enum，支持范型，支持自省
+* 无依赖，能够直接运行在Java SE 5.0以上版本
+* 支持Android
+
+### [GSON](https://github.com/google/gson)
+**Repository**: [https://github.com/google/gson](https://github.com/google/gson)  
+**Description**: google开源的JSON解析库
+
+### [Jackson](http://wiki.fasterxml.com/JacksonHome)
+**Repository**: [https://github.com/FasterXML/jackson-core](https://github.com/FasterXML/jackson-core)  
+**Description**: Jackson可以轻松的将Java对象转换成json对象和xml文档，同样也可以将json、xml转换成Java对象  
+
+### [Moshi](https://github.com/square/moshi)
+**Repository**: [https://github.com/square/moshi](https://github.com/square/moshi)  
+**Description**: square开源的JSON库，与GSON相比，更少的内建类型，更少的配置，安全的html转义等。
+
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
