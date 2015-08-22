@@ -41,7 +41,6 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [GSON](#gson)
     * [Jackson](#Jackson)
     * [Moshi](#moshi)
-* [Backward Compatibility]
 * [Background Processing]
 * [Image Processing]
 * [Camera]
@@ -300,7 +299,7 @@ Facebook 开源的一个强大的图片加载组件。
 <a href="#or-mapping" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
 ### Event Buses
-### [EventBus](https://github.com/greenrobot/EventBus)
+#### [EventBus](https://github.com/greenrobot/EventBus)
 **Repository**: [https://github.com/greenrobot/EventBus](https://github.com/greenrobot/EventBus)
 **Description**: 事件总线框架，非注解，效率非常高，这里是和square的otto的[对比](https://github.com/greenrobot/EventBus/blob/master/COMPARISON.md)。  
 **Features**:  
@@ -310,22 +309,17 @@ Facebook 开源的一个强大的图片加载组件。
 * 单例
 * 事件继承  
 
-### [Otto](http://square.github.io/otto/)
+#### [Otto](http://square.github.io/otto/)
 **Repository**: [https://github.com/square/otto](https://github.com/square/otto)  
 **Description**: Square开源的事件总线框架，在Guava基础上加强，基于注解形式。
 
-### [AndroidEventBus](https://github.com/bboyfeiyu/AndroidEventBus)
+#### [AndroidEventBus](https://github.com/bboyfeiyu/AndroidEventBus)
 **Repository**: [https://github.com/bboyfeiyu/AndroidEventBus](https://github.com/bboyfeiyu/AndroidEventBus)  
 **Description**: [bboyfeiyu](https://github.com/bboyfeiyu)开源的事件总线框架，吸收了greenrobot的EventBus以及square的otto的优点，
 并在此基础上做出了相应的改进，使得事件总线框架更适合用户的使用习惯，也使得事件的投递更加的精准、灵活。
 
-## Reference
-*  [android-arsenal](https://android-arsenal.com/)
-*  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
-*  [wasabeef awesome-android-libraries](https://github.com/wasabeef/awesome-android-libraries)
-
 ### JSON
-### [fastjson](https://github.com/alibaba/fastjson)
+#### [fastjson](https://github.com/alibaba/fastjson)
 **Repository**: [https://github.com/alibaba/fastjson](https://github.com/alibaba/fastjson)  
 **Description**: 阿里巴巴开源JSON解析库，是一个Java语言编写的高性能功能完善的JSON库。它采用一种“假定有序快速匹配”的算法，
 把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。[各种JSON库的比较](https://github.com/alibaba/fastjson/wiki/%E5%90%84%E7%A7%8DJSON%E5%BA%93%E7%9A%84%E6%AF%94%E8%BE%83)
@@ -335,17 +329,41 @@ Facebook 开源的一个强大的图片加载组件。
 * 无依赖，能够直接运行在Java SE 5.0以上版本
 * 支持Android
 
-### [GSON](https://github.com/google/gson)
+#### [GSON](https://github.com/google/gson)
 **Repository**: [https://github.com/google/gson](https://github.com/google/gson)  
 **Description**: google开源的JSON解析库
 
-### [Jackson](http://wiki.fasterxml.com/JacksonHome)
+#### [Jackson](http://wiki.fasterxml.com/JacksonHome)
 **Repository**: [https://github.com/FasterXML/jackson-core](https://github.com/FasterXML/jackson-core)  
 **Description**: Jackson可以轻松的将Java对象转换成json对象和xml文档，同样也可以将json、xml转换成Java对象  
 
-### [Moshi](https://github.com/square/moshi)
+#### [Moshi](https://github.com/square/moshi)
 **Repository**: [https://github.com/square/moshi](https://github.com/square/moshi)  
 **Description**: square开源的JSON库，与GSON相比，更少的内建类型，更少的配置，安全的html转义等。
 
+### Background Processing
+#### [Bolts-Android](https://github.com/BoltsFramework/Bolts-Android)
+**Repository**: [https://github.com/BoltsFramework/Bolts-Android](https://github.com/BoltsFramework/Bolts-Android)  
+**Description**: Parse发布的面向Android的底层库集合，参见[parse-announces-bolts](http://www.infoq.com/cn/news/2014/02/parse-announces-bolts)  
+
+#### [android-priority-jobqueue](https://github.com/path/android-priority-jobqueue)
+**Repository**: [https://github.com/path/android-priority-jobqueue](https://github.com/path/android-priority-jobqueue)  
+**Description**: Path开源的android优先级任务队列框架。
+
+### Image Processing
+#### [android-gpuimage](https://github.com/CyberAgent/android-gpuimage)
+**Repository**: [https://github.com/path/android-priority-jobqueue](https://github.com/path/android-priority-jobqueue)  
+**Description**: GPUImage是个功能十分强大、又十分易用的图像处理库。提供各种各样的图像处理滤镜，并且支持照相机和摄像机的实时滤镜。  
+
+#### [ImageFilterForAndroid](http://www.cnblogs.com/daizhj)
+**Repository**: [https://github.com/daizhenjun/ImageFilterForAndroid](https://github.com/daizhenjun/ImageFilterForAndroid)  
+**Description**: 国内的代震军开源的滤镜效果框架。
+
+
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+
+## Reference
+*  [android-arsenal](https://android-arsenal.com/)
+*  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
+*  [wasabeef awesome-android-libraries](https://github.com/wasabeef/awesome-android-libraries)
