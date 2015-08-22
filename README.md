@@ -41,13 +41,16 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [GSON](#gson)
     * [Jackson](#Jackson)
     * [Moshi](#moshi)
-* [Background Processing]
-* [Image Processing]
-* [Camera]
-* [Video]
-* [Logging]
-* [Android Plugin]
-* [NoSQL]
+* [Background Processing](#background-processing)
+    * [Bolts-Android](#bolts-android)
+    * [android-priority-jobqueue](#android-priority-jobqueue)
+* [Image Processing](#image-processing)
+    * [android-gpuimage](#android-gpuimage)
+    * [ImageFilterForAndroid](#imagefilterforandroid)
+* [Camera](#camera)
+* [Video](#Video)
+* [Logging](#logging)
+* [Android Plugin](#android-plugin)
 * [Security]
 * [Showcases]
 
@@ -359,9 +362,82 @@ Facebook 开源的一个强大的图片加载组件。
 **Repository**: [https://github.com/daizhenjun/ImageFilterForAndroid](https://github.com/daizhenjun/ImageFilterForAndroid)  
 **Description**: 国内的代震军开源的滤镜效果框架。
 
+### Camera
+#### [cwac-camera](https://github.com/commonsguy/cwac-camera)
+**Repository**: [https://github.com/commonsguy/cwac-camera](https://github.com/commonsguy/cwac-camera)  
+**Description**: commonsguy开源的camera操作封装。  
 
+#### [SquareCamera](https://github.com/boxme/SquareCamera)
+**Repository**: [https://github.com/boxme/SquareCamera](https://github.com/boxme/SquareCamera)  
+**Description**: 正方的摄像机，有前后摄像头等操作。  
+
+#### [CameraModule](https://yalantis.com/?utm_source=github)
+**Repository**: [https://github.com/Yalantis/CameraModule](https://github.com/Yalantis/CameraModule)  
+**Description**: Yalantis开源的摄像机，有自动聚焦功能等。
+
+#### [OpenCamera](https://github.com/almalence/OpenCamera)
+**Repository**: [https://github.com/almalence/OpenCamera](https://github.com/almalence/OpenCamera)  
+**Description**: 完整的摄像机，功能很全，不过代码有点乱。
+
+#### [StickerCamera](https://github.com/Skykai521/StickerCamera)
+**Repository**: [https://github.com/Skykai521/StickerCamera](https://github.com/Skykai521/StickerCamera)  
+**Description**: 这是一款集成了相机,图片裁剪,给图片贴贴图打标签的相机应用。  
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+
+### Video
+#### [AndroidFFmpeg](https://github.com/appunite/AndroidFFmpeg)
+**Repository**: [https://github.com/appunite/AndroidFFmpeg](https://github.com/appunite/AndroidFFmpeg)  
+**Description**: FFmpeg视频解析的例子。  
+
+#### [Vitamio](http://www.vitamio.org)
+**Repository**: [https://github.com/yixia/VitamioBundle](https://github.com/yixia/VitamioBundle)  
+**Description**: Vitamio是一款Android 与iOS 平台上的全能多媒体开发框架。  
+**Features**:  
+* 全面支持硬件解码与 GPU 渲染
+* 能够流畅播放 720P 甚至 1080P 高清 MKV，FLV，MP4，MOV，TS，RMVB 等常见格式的视频
+* 在 Android 与 iOS 上跨平台支持 MMS, RTSP, RTMP, HLS(m3u8)等常见的多种视频流媒体协议，包括点播与直播
+
+### Logging
+#### [Logger](https://github.com/orhanobut/logger)
+**Repository**: [https://github.com/orhanobut/logger](https://github.com/orhanobut/logger)  
+**Description**: 简单、美观而且十分强大的 Android 日志工具。  
+
+#### [DebugLog](https://github.com/MustafaFerhan/DebugLog)
+**Repository**: [https://github.com/MustafaFerhan/DebugLog](https://github.com/MustafaFerhan/DebugLog)  
+**Description**: 可以帮你创建更简单和更容易理解的调试日志，能够友好的显示调试信息所在类和函数。  
+
+#### [hugo](https://github.com/JakeWharton/hugo)
+**Repository**: [https://github.com/JakeWharton/hugo](https://github.com/JakeWharton/hugo)  
+**Description**: 用于打印函数信息及执行时间的工具，仅在 debug 模式生效。  
+
+### Android Plugin
+#### [AndroidDynamicLoader](https://github.com/mmin18/AndroidDynamicLoader)
+**Repository**: [https://github.com/mmin18/AndroidDynamicLoader](https://github.com/mmin18/AndroidDynamicLoader)  
+**Description**: 点评的插件化实现方式，是用 Fragment 以及 Schema 的方式实现。
+
+#### [dynamic-load-apk](http://blog.csdn.net/singwhatiwanna/article/details/40283117)
+**Repository**: [https://github.com/singwhatiwanna/dynamic-load-apk](https://github.com/singwhatiwanna/dynamic-load-apk)  
+**Description**: Apk动态加载框架，热部署，利用 ClassLoader 以及 Activity 代理的方式解决。
+
+#### [android-pluginmgr](https://github.com/houkx/android-pluginmgr)
+**Repository**: [https://github.com/houkx/android-pluginmgr](https://github.com/houkx/android-pluginmgr)  
+**Description**: 一种无须规范限制的动态加载解决方案，插件不需要依赖任何API
+**Features**:  
+* 插件为普通apk，无须依赖任何jar
+* Activity生命周期由系统自己管理
+* 使用简单，只需要了解一个类PluginManager的两个方法
+* 启动Activity的效率高
+* 不修改插件，被加载的插件仍然可以独立安装。
+
+### Security
+#### [Conceal](http://facebook.github.io/conceal/)
+**Repository**: [https://github.com/facebook/conceal](https://github.com/facebook/conceal)  
+**Description**: Conceal是一套用于Android上的文件加密和鉴权的Java API
+
+#### [SQLCipher](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
+**Repository**: [https://github.com/sqlcipher/android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)  
+**Description**: Sqlite 加密工具
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
