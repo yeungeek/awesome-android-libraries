@@ -48,11 +48,31 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [android-gpuimage](#android-gpuimage)
     * [ImageFilterForAndroid](#imagefilterforandroid)
 * [Camera](#camera)
+    * [cwac-camera](#cwac-camera)
+    * [SquareCamera](#squarecamera)
+    * [CameraModule](#cameramodule)
+    * [OpenCamera](#opencamera)
+    * [StickerCamera](#stickercamera)
 * [Video](#Video)
+    * [AndroidFFmpeg](#androidffmpeg)
+    * [Vitamio](#vitamio)
 * [Logging](#logging)
+    * [Logger](#logger)
+    * [DebugLog](#debuglog)
+    * [hugo](#hugo)
 * [Android Plugin](#android-plugin)
-* [Security]
-* [Showcases]
+    * [AndroidDynamicLoader](#androiddynamicloader)
+    * [dynamic-load-apk](#dynamic-load-apk)
+    * [android-pluginmgr](#android-pluginmgr)
+* [Security](#security)
+    * [Conceal](#conceal)
+    * [SQLCipher](#sqlcipher)
+* [Showcases](#showcases)
+    * [PocketHub](#pockethub)
+    * [iosched](#iosched)
+    * [Cheesesquare](#cheesesquare)
+    * [muzei](#muzei)
+    * [u2020](#u2020)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -438,6 +458,27 @@ Facebook 开源的一个强大的图片加载组件。
 #### [SQLCipher](https://www.zetetic.net/sqlcipher/sqlcipher-for-android/)
 **Repository**: [https://github.com/sqlcipher/android-database-sqlcipher](https://github.com/sqlcipher/android-database-sqlcipher)  
 **Description**: Sqlite 加密工具
+
+### Showcases
+#### [PocketHub](https://github.com/pockethub/PocketHub)
+**Repository**: [https://github.com/pockethub/PocketHub](https://github.com/pockethub/PocketHub)  
+**Description**: Github 的 Android 客户端项目
+
+#### [iosched](https://github.com/google/iosched)
+**Repository**: [https://github.com/google/iosched](https://github.com/google/iosched)  
+**Description**: The Google I/O 2014 Android App
+
+#### [Cheesesquare](https://github.com/chrisbanes/cheesesquare)
+**Repository**: [https://github.com/chrisbanes/cheesesquare](https://github.com/chrisbanes/cheesesquare)  
+**Description**: Demos the new Android Design library
+
+#### [muzei](http://muzei.co/)
+**Repository**: [https://github.com/romannurik/muzei](https://github.com/romannurik/muzei)  
+**Description**: 定时更换桌面精美壁纸
+
+#### [u2020](https://github.com/JakeWharton/u2020)
+**Repository**: [https://github.com/JakeWharton/u2020](https://github.com/JakeWharton/u2020)  
+**Description**: 开源框架集成的demo
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
