@@ -403,7 +403,7 @@ Facebook 开源的一个强大的图片加载组件。
 **Repository**: [https://github.com/Skykai521/StickerCamera](https://github.com/Skykai521/StickerCamera)  
 **Description**: 这是一款集成了相机,图片裁剪,给图片贴贴图打标签的相机应用。  
 
-<a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
+<a href="#camera" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
 ### Video
 #### [AndroidFFmpeg](https://github.com/appunite/AndroidFFmpeg)
@@ -479,6 +479,8 @@ Facebook 开源的一个强大的图片加载组件。
 #### [u2020](https://github.com/JakeWharton/u2020)
 **Repository**: [https://github.com/JakeWharton/u2020](https://github.com/JakeWharton/u2020)  
 **Description**: 开源框架集成的demo
+
+<a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
