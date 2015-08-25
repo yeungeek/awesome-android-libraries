@@ -155,7 +155,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 **Description**: Java异步Http和WebSocket请求。使用NIO实现异步操作，默认的异步实现是基于[Netty]()之上。
 #### [HttpCache](http://www.trinea.cn/android/android-http-cache)
 **Repository**: [https://github.com/Trinea/AndroidCommon](https://github.com/Trinea/AndroidCommon)  
-**Description**: [Trinea](https://github.com/Trinea)大神写的Http缓存工具。
+**Description**: [Trinea](https://github.com/Trinea)大神写的Http缓存工具。  
 **Features**:
 * 根据cache-control、expires缓存http请求
 * 支持同步、异步Http请求
@@ -235,7 +235,7 @@ Facebook 开源的一个强大的图片加载组件。
 
 #### [Glide](https://github.com/bumptech/glide)
 **Repository**: [https://github.com/bumptech/glide](https://github.com/bumptech/glide)  
-**Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。
+**Description**: 一个高效、开源、 Android设备上的媒体管理框架。灵活的API，可以和很多网络框架进行整合。  
 **Features**:  
 * GIF动画的解码
 * 本地视频剧照的解码
@@ -258,7 +258,7 @@ Facebook 开源的一个强大的图片加载组件。
 
 #### [Picasso](http://square.github.io/picasso/)
 **Repository**: [https://github.com/square/picasso](https://github.com/square/picasso)  
-**Description**: square开源的图片缓存。
+**Description**: square开源的图片缓存。  
 **Features**:
 *  可以自动检测adapter的重用并取消之前的下载
 *  图片变换
@@ -345,7 +345,7 @@ Facebook 开源的一个强大的图片加载组件。
 #### [fastjson](https://github.com/alibaba/fastjson)
 **Repository**: [https://github.com/alibaba/fastjson](https://github.com/alibaba/fastjson)  
 **Description**: 阿里巴巴开源JSON解析库，是一个Java语言编写的高性能功能完善的JSON库。它采用一种“假定有序快速匹配”的算法，
-把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。[各种JSON库的比较](https://github.com/alibaba/fastjson/wiki/%E5%90%84%E7%A7%8DJSON%E5%BA%93%E7%9A%84%E6%AF%94%E8%BE%83)
+把JSON Parse的性能提升到极致，是目前Java语言中最快的JSON库。[各种JSON库的比较](https://github.com/alibaba/fastjson/wiki/%E5%90%84%E7%A7%8DJSON%E5%BA%93%E7%9A%84%E6%AF%94%E8%BE%83)  
 **Features**:  
 * 速度最快，测试表明，fastjson具有极快的性能，超越任其他的java json parser。包括自称最快的jackson
 * 功能强大，完全支持java bean、集合、Map、日期、Enum，支持范型，支持自省
@@ -442,7 +442,7 @@ Facebook 开源的一个强大的图片加载组件。
 
 #### [android-pluginmgr](https://github.com/houkx/android-pluginmgr)
 **Repository**: [https://github.com/houkx/android-pluginmgr](https://github.com/houkx/android-pluginmgr)  
-**Description**: 一种无须规范限制的动态加载解决方案，插件不需要依赖任何API
+**Description**: 一种无须规范限制的动态加载解决方案，插件不需要依赖任何API  
 **Features**:  
 * 插件为普通apk，无须依赖任何jar
 * Activity生命周期由系统自己管理
