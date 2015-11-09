@@ -434,6 +434,11 @@ Facebook 开源的一个强大的图片加载组件。
 **Description**: 用于打印函数信息及执行时间的工具，仅在 debug 模式生效。  
 
 ### Android Plugin
+#### [DynamicAPK](https://github.com/CtripMobile/DynamicAPK)  
+**Repository**:  [https://github.com/CtripMobile/DynamicAPK](https://github.com/CtripMobile/DynamicAPK)   
+**Description**: 实现Android多apk/dex方式的apk加载，支持资源分包。
+[携程Android App插件化和动态加载实践](https://www.infoq.com/cn/articles/ctrip-android-dynamic-loading)
+
 #### [AndroidDynamicLoader](https://github.com/mmin18/AndroidDynamicLoader)
 **Repository**: [https://github.com/mmin18/AndroidDynamicLoader](https://github.com/mmin18/AndroidDynamicLoader)  
 **Description**: 点评的插件化实现方式，是用 Fragment 以及 Schema 的方式实现。
@@ -453,7 +458,7 @@ Facebook 开源的一个强大的图片加载组件。
 * 不修改插件，被加载的插件仍然可以独立安装。
 
 #### [DroidPlugin](https://github.com/Qihoo360/DroidPlugin)
-**Repository**: [https://github.com/Qihoo360/DroidPlugin](https://github.com/Qihoo360/DroidPlugin)
+**Repository**: [https://github.com/Qihoo360/DroidPlugin](https://github.com/Qihoo360/DroidPlugin)  
 **Description**: DroidPlugin 是360手机助手在Android系统上实现了一种新的插件机制:它可以在无需安装、修改的情况下运行APK文件,此机制对改进大型APP的架构，实现多团队协作开发具有一定的好处。  
 **Features**:  
 * 支持Androd 2.3以上系统
