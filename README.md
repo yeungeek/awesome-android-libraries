@@ -503,17 +503,17 @@ _限制和缺陷:_
 * Support proguard and multidex.
 * Pure java implementation.
 
-> 比较：
-> 1. Dexposed不支持Art模式(5.0+)
-> 2. AndFix支持2.3-6.0
-> 3. ClassLoader方案支持2.3-6.0  
-> 在兼容性稳定性上，ClassLoader方案很可靠，如果需要应用不重启就能修复，而且方法足够简单，可以使用AndFix，而Dexposed由于还不能支持art
-
 #### [HotFix](https://github.com/dodola/HotFix)
 **Description**: 安卓App热补丁动态修复框架  
 
 #### [DroidFix](https://github.com/bunnyblue/DroidFix)
 **Description**: AndroidHotFix/Android 代码热修复  
+
+> 比较：  
+> 1. Dexposed不支持Art模式(5.0+)
+> 2. AndFix支持2.3-6.0
+> 3. ClassLoader方案支持2.3-6.0  
+> 在兼容性稳定性上，ClassLoader方案很可靠，如果需要应用不重启就能修复，而且方法足够简单，可以使用AndFix，而Dexposed由于还不能支持art
 
 ### Security
 #### [Conceal](http://facebook.github.io/conceal/)
