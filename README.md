@@ -65,6 +65,12 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [dynamic-load-apk](#dynamic-load-apk)
     * [android-pluginmgr](#android-pluginmgr)
     * [DroidPlugin](#droidplugin)
+* [Android Hot Fix](#android-hot-fix)
+    * [Dexposed](#dexposed)
+    * [AndFix](#andfix)
+    * [Nuwa](#nuwa)
+    * [HotFix](#hotfix)
+    * [DroidFix](#droidfix)
 * [Security](#security)
     * [Conceal](#conceal)
     * [SQLCipher](#sqlcipher)
@@ -477,6 +483,37 @@ _限制和缺陷:_
 无法在插件中注册一些具有特殊Intent Filter的Service、Activity、BroadcastReceiver、ContentProvider等组件以供Android系统、已经安装的其他APP调用。
 * 对Activity的LaunchMode支持不够好，Activity Stack管理存在一定缺陷。Activity的onNewIntent函数可能不会被触发。 （此为BUG，未来会修复）
 缺乏对Native层的Hook，对某些带native代码的apk支持不好，可能无法运行。比如一部分游戏无法当作插件运行。
+
+### Android Hot Fix
+> 参考 [各大热补丁方案分析和比较](http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/)
+
+#### [Dexposed](https://github.com/alibaba/dexposed)
+**Description**: 基于[Xposed](https://github.com/rovo89/Xposed)的AOP框架，方法级粒度，可以进行AOP编程、插桩、热补丁、SDK hook等功能。
+
+#### [AndFix](https://github.com/alibaba/AndFix)
+**Description**: 阿里巴巴的另一个团队的hot fix方案。同样是方法的hook，AndFix不像Dexposed从Method入手，而是以Field为切入点。
+
+>下面的几种是基于[ClassLoader](http://bugly.qq.com/blog/?p=781)机制来实现hot fix方案。是原腾讯空间Android工程师，陈钟发明的热补丁方案，是他在看源码的时候偶然发现的切入点。
+
+#### [Nuwa](https://github.com/jasonross/Nuwa)
+**Description**: 纯java实现的hot fix方案  
+**Features**:
+* Support both dalvik and art runtime.
+* Support productFlavor and buildType.
+* Support proguard and multidex.
+* Pure java implementation.
+
+> 比较：
+> 1. Dexposed不支持Art模式(5.0+)
+> 2. AndFix支持2.3-6.0
+> 3. ClassLoader方案支持2.3-6.0  
+> 在兼容性稳定性上，ClassLoader方案很可靠，如果需要应用不重启就能修复，而且方法足够简单，可以使用AndFix，而Dexposed由于还不能支持art
+
+#### [HotFix](https://github.com/dodola/HotFix)
+**Description**: 安卓App热补丁动态修复框架  
+
+#### [DroidFix](https://github.com/bunnyblue/DroidFix)
+**Description**: AndroidHotFix/Android 代码热修复  
 
 ### Security
 #### [Conceal](http://facebook.github.io/conceal/)
