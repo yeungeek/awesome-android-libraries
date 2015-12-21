@@ -87,6 +87,10 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [RxLifecycle](#rxlifecycle)
     * [rx-preferences](#rx-preferences)
     * [sqlbrite](#sqlbrite)    
+    * [Retrofit](#retrofit)
+    * [RxPermissions](#rxpermissions)
+    * [RxFile](#rxfile)
+    * [xBus](#xbus)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -565,7 +569,7 @@ _限制和缺陷:_
 RxJava在Android的扩展，从版本0.25升级到1.x后，改变非常大，现在1.x剩下来的就只有[AndroidSchedulers](https://github.com/ReactiveX/RxAndroid/blob/master/rxandroid%2Fsrc%2Fmain%2Fjava%2Frx%2Fandroid%2Fschedulers%2FAndroidSchedulers.java)。从中剥离出来[RxBinding](https://github.com/JakeWharton/RxBinding),[RxLifecycle](https://github.com/trello/RxLifecycle),[rx-preferences](https://github.com/f2prateek/rx-preferences)等，详细请看[How to upgrade to RxAndroid 1.0](http://blog.danlew.net/2015/09/01/how-to-upgrade-to-rxandroid-10/)
 
 #### [RxBinding](https://github.com/JakeWharton/RxBinding)
-Jake大神的作品，UI控件的RxJava实现
+Jake大神的作品，Android UI控件的RxJava实现
 
 #### [RxLifecycle](https://github.com/trello/RxLifecycle)
 RxAndroid的生命周期控制
@@ -576,9 +580,23 @@ SharedPreferences的实现
 #### [sqlbrite](https://github.com/square/sqlbrite)
 android sqlite的实现
 
+#### [Retrofit](https://github.com/square/retrofit)
+Restful网络请求框架，目前是Jake大神主持，发布了Retrofit2.0.0-beta。  
+而且从1.0开始已经支持Observable。[用 Retrofit 2 简化 HTTP 请求](https://realm.io/cn/news/droidcon-jake-wharton-simple-http-retrofit-2/)
+
+#### [RxPermissions](https://github.com/tbruyelle/RxPermissions)
+RxJava实现的Android运行时权限控制
+
+#### [RxFile](https://github.com/pavlospt/RxFile)
+RxJava实现，从文件，图片或者视频中获取缩略图
+
+#### [xBus](https://github.com/mcxiaoke/xBus)
+EventBus的RxJava实现。 最简单的[RxBus实现](https://github.com/kaushikgopal/RxJava-Android-Samples/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmorihacky%2Fandroid%2Frxjava%2Frxbus%2FRxBus.java)
+
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
 ## Reference
 *  [android-arsenal](https://android-arsenal.com/)
 *  [Trinea android-open-project](https://github.com/Trinea/android-open-project)
 *  [wasabeef awesome-android-libraries](https://github.com/wasabeef/awesome-android-libraries)
+*  [Awesome-RxJava](https://github.com/lzyzsd/Awesome-RxJava)
