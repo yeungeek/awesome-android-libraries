@@ -80,6 +80,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [Cheesesquare](#cheesesquare)
     * [muzei](#muzei)
     * [u2020](#u2020)
+* [RxJava](#rxjava)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -544,6 +545,30 @@ _限制和缺陷:_
 #### [u2020](https://github.com/JakeWharton/u2020)
 **Repository**: [https://github.com/JakeWharton/u2020](https://github.com/JakeWharton/u2020)  
 **Description**: 开源框架集成的demo
+
+### RxJava
+> Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM
+
+这是RxJava在github上的描述，它是响应式编程在JVM上的一个扩展，核心在于异步。那对于Android来说，带来什么。
+具体的可以看看[扔物线](https://github.com/rengwuxian)写的[给 Android 开发者的 RxJava 详解](http://gank.io/post/560e15be2dca930e00da1083)，非常的详细，该有的都有。下面的是一些RxJava的延伸。
+
+#### [RxJava](https://github.com/ReactiveX/RxJava)
+这是本尊，基类，下面的库都是基于RxJava。
+
+#### [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+RxJava在Android的扩展，从版本0.25升级到1.x后，改变非常大，现在1.x剩下来的就只有[AndroidSchedulers](https://github.com/ReactiveX/RxAndroid/blob/master/rxandroid%2Fsrc%2Fmain%2Fjava%2Frx%2Fandroid%2Fschedulers%2FAndroidSchedulers.java)。从中剥离出来[RxBinding](https://github.com/JakeWharton/RxBinding),[RxLifecycle](https://github.com/trello/RxLifecycle),[rx-preferences](https://github.com/f2prateek/rx-preferences)等，详细请看[How to upgrade to RxAndroid 1.0](http://blog.danlew.net/2015/09/01/how-to-upgrade-to-rxandroid-10/)
+
+#### [RxBinding](https://github.com/JakeWharton/RxBinding)
+Jake大神的作品，UI控件的RxJava实现
+
+#### [RxLifecycle](https://github.com/trello/RxLifecycle)
+RxAndroid的生命周期控制
+
+#### [rx-preferences](https://github.com/f2prateek/rx-preferences)
+SharedPreferences的实现
+
+#### [sqlbrite](https://github.com/square/sqlbrite)
+android sqlite的实现
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
