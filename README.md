@@ -555,7 +555,7 @@ _限制和缺陷:_
 ### RxJava
 > Reactive Extensions for the JVM – a library for composing asynchronous and event-based programs using observable sequences for the Java VM
 
-这是RxJava在github上的描述，它是响应式编程在JVM上的一个扩展，核心在于异步。那对于Android来说，带来什么。
+这是RxJava在github上的描述，它是响应式编程在JVM上的一个扩展，核心在于异步。那对于Android来说，带来了什么。
 具体的可以看看[扔物线](https://github.com/rengwuxian)写的[给 Android 开发者的 RxJava 详解](http://gank.io/post/560e15be2dca930e00da1083)，非常的详细，该有的都有。下面的是一些RxJava的延伸。
 
 #### [RxJava](https://github.com/ReactiveX/RxJava)
