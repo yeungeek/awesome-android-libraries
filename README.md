@@ -81,6 +81,12 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [muzei](#muzei)
     * [u2020](#u2020)
 * [RxJava](#rxjava)
+    * [RxJava](#rxjava-1)
+    * [RxAndroid](#rxandroid)
+    * [RxBinding](#rxbinding)
+    * [RxLifecycle](#rxlifecycle)
+    * [rx-preferences](#rx-preferences)
+    * [sqlbrite](#sqlbrite)    
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
