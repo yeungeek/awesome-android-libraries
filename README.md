@@ -91,6 +91,14 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [RxPermissions](#rxpermissions)
     * [RxFile](#rxfile)
     * [xBus](#xbus)
+    * [Agera](#agera)
+* [Javascript](#javascript)
+    * [React Native](#react-native)
+    * [Weex](#weex)
+    * [JsBridge](#jsbridge)
+    * [Safe Java Js WebviewBridge](#safe-java-js-webview-bridge)
+    * [RainbowBridge](#rainbowbridge)
+    * [Scripto](#scripto)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -592,6 +600,34 @@ RxJava实现，从文件，图片或者视频中获取缩略图
 
 #### [xBus](https://github.com/mcxiaoke/xBus)
 EventBus的RxJava实现。 最简单的[RxBus实现](https://github.com/kaushikgopal/RxJava-Android-Samples/blob/master/app%2Fsrc%2Fmain%2Fjava%2Fcom%2Fmorihacky%2Fandroid%2Frxjava%2Frxbus%2FRxBus.java)
+
+#### [Agera](https://github.com/google/agera)
+Agera(瑞典文的意思是"采取行动")是一个超轻量级的Android库，帮助Android应用中有生命周期的组件(比如:Activities)或者组件中的对象(比如:Views)预准备数据。
+通过加入函数式响应式编程，Agera可以在 什么时机, 什么线程 和 什么数据 层面上更清晰的分离数据处理流程，并且使用一个接近自然语言的单个表达式就能编写一个复杂的异步流。  
+from [Agera中文wiki](https://github.com/captain-miao/AndroidAgeraTutorial/wiki)  
+Google Agera vs Reactivex：[Reddit的讨论](https://www.reddit.com/r/androiddev/comments/4g8y7l/advanced_rxjava_google_agera_vs_reactivex/),
+[详细对比](http://akarnokd.blogspot.sg/2016/04/google-agera-vs-reactivex.html)
+
+### Javascript
+现在基于H5 + JavaScript来构建原生APP的技术，当下真的是很火爆。
+#### [React Native](https://github.com/facebook/react-native/)
+React Native使你能够在Javascript和React的基础上获得完全一致的开发体验，构建世界一流的原生APP。
+React Native着力于提高多平台开发的开发效率 —— 仅需学习一次，编写任何平台。(Learn once, write anywhere)  
+Facebook已经在多项产品中使用了React Native，并且将持续地投入建设React Native。  
+
+#### [Weex](https://github.com/alibaba/weex)
+阿里的Weex框架是针对动态编程和发布项目的一个可扩展、跨平台的解决方案。  
+具体介绍：[Weex详解：灵活的移动端高性能动态化方案](http://www.infoq.com/cn/articles/introducing-weex)  
+[Weex vs ReactNative](https://zhuanlan.zhihu.com/p/21677103)
+
+### [JsBridge](https://github.com/lzyzsd/JsBridge)
+大头鬼开源的一个JsBridge框架
+### [Safe Java Js WebviewBridge](https://github.com/pedant/safe-java-js-webview-bridge)
+WebView中的Java与JavaScript提供【安全可靠】的多样互通方案实现
+### [RainbowBridge](https://github.com/Sunzxyong/RainbowBridge)
+A safe JsBridge framework
+### [Scripto](https://github.com/ImangazalievM/Scripto)
+Java and JavaScript interaction library
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
