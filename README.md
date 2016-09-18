@@ -528,6 +528,9 @@ _限制和缺陷:_
 #### [DroidFix](https://github.com/bunnyblue/DroidFix)
 **Description**: AndroidHotFix/Android 代码热修复  
 
+#### [AnoleFix](https://github.com/dodola/AnoleFix)
+**Description**: Another hotfix 另一个热修复方案 Alpha，来自InstantRun 和 Robust 类似
+
 > 比较：  
 > 1. Dexposed不支持Art模式(5.0+)  
 > 2. AndFix支持2.3-6.0  
