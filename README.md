@@ -71,6 +71,8 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [Nuwa](#nuwa)
     * [HotFix](#hotfix)
     * [DroidFix](#droidfix)
+    * [AnoleFix](#anolefix)
+    * [Amigo](#amigo)
 * [Security](#security)
     * [Conceal](#conceal)
     * [SQLCipher](#sqlcipher)
@@ -530,6 +532,9 @@ _限制和缺陷:_
 
 #### [AnoleFix](https://github.com/dodola/AnoleFix)
 **Description**: Another hotfix 另一个热修复方案 Alpha，来自InstantRun 和 Robust 类似
+
+#### [Amigo](https://github.com/eleme/Amigo)
+**Description**: 饿了么团队开源的 Android hotfix框架,
 
 > 比较：  
 > 1. Dexposed不支持Art模式(5.0+)  
