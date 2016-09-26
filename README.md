@@ -73,6 +73,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [DroidFix](#droidfix)
     * [AnoleFix](#anolefix)
     * [Amigo](#amigo)
+    * [Tinker](#tinker)
 * [Security](#security)
     * [Conceal](#conceal)
     * [SQLCipher](#sqlcipher)
@@ -101,6 +102,11 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [Safe Java Js WebviewBridge](#safe-java-js-webview-bridge)
     * [RainbowBridge](#rainbowbridge)
     * [Scripto](#scripto)
+* [Weapp](#weapp)
+    * [微信小应用资源汇总整理](#微信小应用资源汇总整理)
+    * [官方开发文档wiki](#官方开发文档wiki)
+    * [weapp ide crack](#weapp-ide-crack)
+
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -515,6 +521,11 @@ _限制和缺陷:_
 **Description**: 阿里巴巴的另一个团队的hot fix方案。同样是方法的hook，AndFix不像Dexposed从Method入手，而是以Field为切入点。
 
 >下面的几种是基于[ClassLoader](http://bugly.qq.com/blog/?p=781)机制来实现hot fix方案。是原腾讯空间Android工程师，陈钟发明的热补丁方案，是他在看源码的时候偶然发现的切入点。
+> 比较：  
+> 1. Dexposed不支持Art模式(5.0+)  
+> 2. AndFix支持2.3-6.0  
+> 3. ClassLoader方案支持2.3-6.0    
+> 在兼容性稳定性上，ClassLoader方案很可靠，如果需要应用不重启就能修复，而且方法足够简单，可以使用AndFix，而Dexposed由于还不能支持art
 
 #### [Nuwa](https://github.com/jasonross/Nuwa)
 **Description**: 纯java实现的hot fix方案  
@@ -534,13 +545,11 @@ _限制和缺陷:_
 **Description**: Another hotfix 另一个热修复方案 Alpha，来自InstantRun 和 Robust 类似
 
 #### [Amigo](https://github.com/eleme/Amigo)
-**Description**: 饿了么团队开源的 Android hotfix框架,
+**Description**: 饿了么团队开源的 Android hotfix框架
 
-> 比较：  
-> 1. Dexposed不支持Art模式(5.0+)  
-> 2. AndFix支持2.3-6.0  
-> 3. ClassLoader方案支持2.3-6.0    
-> 在兼容性稳定性上，ClassLoader方案很可靠，如果需要应用不重启就能修复，而且方法足够简单，可以使用AndFix，而Dexposed由于还不能支持art
+#### [Tinker](https://github.com/Tencent/tinker)
+**Description**: 微信开源的Android Hot fix方案，具体说明：[微信Tinker的一切都在这里，包括源码(一)](http://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=2649286384&idx=1&sn=f1aff31d6a567674759be476bcd12549&scene=0#rd)
+
 
 ### Security
 #### [Conceal](http://facebook.github.io/conceal/)
@@ -636,6 +645,19 @@ WebView中的Java与JavaScript提供【安全可靠】的多样互通方案实�
 A safe JsBridge framework
 ### [Scripto](https://github.com/ImangazalievM/Scripto)
 Java and JavaScript interaction library
+
+### Weapp
+上周被微信小程序刷屏了，各种大号都出来说微信小程序，为了能够迎合变化，不能落后，提供一些资源给大家。
+> 什么是小程序:小程序是一种不需要下载安装即可使用的应用,它实现了应用"触手可及"的梦想，用户扫一扫或者搜一下即可打开应用。
+> 也体现了"用完即走"的理念，用户不用关心是否安装太多应用的问题。应用将无处不在，随时可用,但又无需安装卸载.  ---- 张小龙
+
+#### [微信小应用资源汇总整理](https://github.com/Aufree/awesome-wechat-weapp)
+整理收集大部分微信小程序的信息，非常管用
+
+#### [官方开发文档wiki](https://mp.weixin.qq.com/wiki)
+
+#### [weapp ide crack](https://github.com/gavinkwoe/weapp-ide-crack)
+微信小程序的IDE破解,目前只有300个内部邀请资格，用了这个开发小程序无忧，但是不能上传(没有appid)
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
