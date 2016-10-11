@@ -649,6 +649,7 @@ Java and JavaScript interaction library
 
 ### [Rexxar](https://github.com/douban/rexxar-android)
 Rexxar 是一个针对移动端的混合开发框架。现在支持 Android 和 iOS 平台。并有一个 Web 基础库。  
+[豆瓣的混合开发框架 -- Rexxar](http://lincode.github.io/Rexxar-OpenSource)
 * [Rexxar Web](https://github.com/douban/rexxar-web)
 * [Rexxar Android](https://github.com/douban/rexxar-android)
 * [Rexxar iOS](https://github.com/douban/rexxar-ios)
