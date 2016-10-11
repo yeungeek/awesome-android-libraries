@@ -102,6 +102,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [Safe Java Js WebviewBridge](#safe-java-js-webview-bridge)
     * [RainbowBridge](#rainbowbridge)
     * [Scripto](#scripto)
+    * [Rexxar](#rexxar)
 * [Weapp](#weapp)
     * [微信小应用资源汇总整理](#微信小应用资源汇总整理)
     * [官方开发文档wiki](#官方开发文档wiki)
@@ -645,6 +646,13 @@ WebView中的Java与JavaScript提供【安全可靠】的多样互通方案实�
 A safe JsBridge framework
 ### [Scripto](https://github.com/ImangazalievM/Scripto)
 Java and JavaScript interaction library
+
+### [Rexxar](https://github.com/douban/rexxar-android)
+Rexxar 是一个针对移动端的混合开发框架。现在支持 Android 和 iOS 平台。并有一个 Web 基础库。  
+* [Rexxar Web](https://github.com/douban/rexxar-web)
+* [Rexxar Android](https://github.com/douban/rexxar-android)
+* [Rexxar iOS](https://github.com/douban/rexxar-ios)
+
 
 ### Weapp
 上周被微信小程序刷屏了，各种大号都出来说微信小程序，为了能够迎合变化，不能落后，提供一些资源给大家。
