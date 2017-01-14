@@ -663,10 +663,11 @@ Rexxar 是一个针对移动端的混合开发框架。现在支持 Android 和 
 #### [微信小应用资源汇总整理](https://github.com/Aufree/awesome-wechat-weapp)
 整理收集大部分微信小程序的信息，非常管用
 
-#### [官方开发文档wiki](https://mp.weixin.qq.com/wiki)
+#### [微信小程序接入指南](https://mp.weixin.qq.com/debug/wxadoc/introduction/index.html)
 
 #### [weapp ide crack](https://github.com/gavinkwoe/weapp-ide-crack)
-微信小程序的IDE破解,目前只有300个内部邀请资格，用了这个开发小程序无忧，但是不能上传(没有appid)
+微信小程序的IDE破解,目前只有300个内部邀请资格，用了这个开发小程序无忧，但是不能上传(没有appid)   
+已经不需要破解，官方支持
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
