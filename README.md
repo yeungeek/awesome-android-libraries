@@ -3,7 +3,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
 [UI个性化控件](https://github.com/yeungeek/awesome-android-ui)  
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yeungeek/awesome-android-libraries?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-##Index
+## Index
 * [Dependency Injections](#dependency-injections)
     * [AndroidAnnotations](#androidannotations)
     * [Butter Knife](#butter-knife)
@@ -65,6 +65,9 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [dynamic-load-apk](#dynamic-load-apk)
     * [android-pluginmgr](#android-pluginmgr)
     * [DroidPlugin](#droidplugin)
+    * [RePlugin](#replugin)
+    * [VirtualAPK](#virtualapk)
+    * [VirtualApp](#virtualapp)
 * [Android Hot Fix](#android-hot-fix)
     * [Dexposed](#dexposed)
     * [AndFix](#andfix)
@@ -511,6 +514,16 @@ _限制和缺陷:_
 无法在插件中注册一些具有特殊Intent Filter的Service、Activity、BroadcastReceiver、ContentProvider等组件以供Android系统、已经安装的其他APP调用。
 * 对Activity的LaunchMode支持不够好，Activity Stack管理存在一定缺陷。Activity的onNewIntent函数可能不会被触发。 （此为BUG，未来会修复）
 缺乏对Native层的Hook，对某些带native代码的apk支持不好，可能无法运行。比如一部分游戏无法当作插件运行。
+
+#### [RePlugin](https://github.com/Qihoo360/RePlugin)
+**Description**: RePlugin是一套完整的、稳定的、适合全面使用的，占坑类插件化方案，由360手机卫士的RePlugin Team研发，也是业内首个提出”全面插件化“（全面特性、全面兼容、全面使用）的方案。   
+**Features**:  
+* **极其灵活**：主程序无需升级（无需在Manifest中预埋组件），即可支持新增的四大组件，甚至全新的插件
+* **非常稳定**：Hook点仅有一处（ClassLoader），无任何Binder Hook！如此可做到其崩溃率仅为“万分之一”，并完美兼容市面上近乎所有的Android ROM
+* **特性丰富**：支持近乎所有在“单品”开发时的特性。包括静态Receiver、Task-Affinity坑位、自定义Theme、进程坑位、AppCompat、DataBinding等
+* **易于集成**：无论插件还是主程序，只需“数行”就能完成接入
+* **管理成熟**：拥有成熟稳定的“插件管理方案”，支持插件安装、升级、卸载、版本管理，甚至包括进程通讯、协议版本、安全校验等
+* **数亿支撑**：有360手机卫士庞大的数亿用户做支撑，三年多的残酷验证，确保App用到的方案是最稳定、最适合使用的
 
 ### Android Hot Fix
 > 参考 [各大热补丁方案分析和比较](http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/)
