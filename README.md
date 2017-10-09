@@ -525,6 +525,30 @@ _限制和缺陷:_
 * **管理成熟**：拥有成熟稳定的“插件管理方案”，支持插件安装、升级、卸载、版本管理，甚至包括进程通讯、协议版本、安全校验等
 * **数亿支撑**：有360手机卫士庞大的数亿用户做支撑，三年多的残酷验证，确保App用到的方案是最稳定、最适合使用的
 
+#### [VirtualAPK](https://github.com/didi/VirtualAPK)
+**Description**: VirtualAPK 是滴滴出行自研的一款优秀的插件化框架。  
+**Features**:  
+* 功能完备 
+  * 支持几乎所有的 Android 特性
+  * 四大组件方面：四大组件均不需要在宿主manifest中预注册，每个组件都有完整的生命周期
+  * 自定义View：支持自定义 View，支持自定义属性和 style，支持动画
+  * PendingIntent：支持 PendingIntent 以及和其相关的 Alarm、Notification 和AppWidget
+  * 支持插件 Application 以及插件 manifest 中的 meta-data
+  * 支持插件中的so
+* 优秀的兼容性
+  * 兼容市面上几乎所有的 Android 手机，这一点已经在滴滴出行客户端中得到验证
+  * 资源方面适配小米、Vivo、Nubia 等，对未知机型采用自适应适配方案
+  * 极少的 Binder Hook，目前仅仅 hook 了两个 Binder：AMS 和 IContentProvider，Hook过程做了充分的兼容性适配
+  * 插件运行逻辑和宿主隔离，确保框架的任何问题都不会影响宿主的正常运行
+* 入侵性极低
+  * 插件开发等同于原生开发，四大组件无需继承特定的基类
+  * 精简的插件包，插件可以依赖宿主中的代码和资源，也可以不依赖
+  * 插件的构建过程简单，通过Gradle插件来完成插件的构建，整个过程对开发者透明
+
+#### [VirtualApp](https://github.com/asLody/VirtualApp)
+**Description**: VirtualApp 是一个App虚拟化引擎,允许你在App内创建一个虚拟空间，你可以在虚拟空间内任意的安装、启动和卸载APK，这一切都与外部隔离，就如同一个沙盒。
+
+
 ### Android Hot Fix
 > 参考 [各大热补丁方案分析和比较](http://blog.zhaiyifan.cn/2015/11/20/HotPatchCompare/)
 
