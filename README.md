@@ -110,7 +110,13 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [微信小应用资源汇总整理](#微信小应用资源汇总整理)
     * [官方开发文档wiki](#官方开发文档wiki)
     * [weapp ide crack](#weapp-ide-crack)
-
+* [APM](#apm)
+    * [matrix](#matrix)
+    * [ArgusAPM](#argusapm)
+    * [scouter](#scouter)
+    * [AndroidGodEye](#androidgodeye)
+* [Assistant](#assistant)
+    * [DoraemonKit](#doraemonkit)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
@@ -705,6 +711,28 @@ Rexxar 是一个针对移动端的混合开发框架。现在支持 Android 和 
 #### [weapp ide crack](https://github.com/gavinkwoe/weapp-ide-crack)
 微信小程序的IDE破解,目前只有300个内部邀请资格，用了这个开发小程序无忧，但是不能上传(没有appid)   
 已经不需要破解，官方支持
+
+### APM
+APM (Application Performance Manage)
+#### [matrix](https://github.com/Tencent/matrix)
+Matrix is a plugin style, non-invasive APM system developed by WeChat.
+
+#### [ArgusAPM](https://github.com/Qihoo360/ArgusAPM)
+Powerful, comprehensive (Android) application performance management platform
+
+#### [Scouter](https://github.com/scouter-project/scouter)
+Scouter is an open source APM (Application Performance Management) tool.
+
+#### [AndroidGodEye](https://github.com/Kyson/AndroidGodEye)
+AndroidGodEye:A performance monitor tool for Android , you can easily monitor the performance of your app in real time in pc browser
+
+### Assistant
+Develop Assistant
+#### [DoraemonKit](https://github.com/didi/DoraemonKit)
+A full-featured APP ( iOS & Android ) development assistant
+
+#### [DebugDrawer](https://github.com/palaima/DebugDrawer)
+Android Debug Drawer for faster development
 
 <a href="#index" title="返回目录" style="width:100%"><img src="https://raw.githubusercontent.com/yeungeek/awesome-android-libraries/master/art/ic_arrow.png" align="right"/></a>
 
