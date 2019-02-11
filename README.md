@@ -117,6 +117,7 @@ Android开源框架库分类，挑选出最常用，最实用的开源项目，�
     * [AndroidGodEye](#androidgodeye)
 * [Assistant](#assistant)
     * [DoraemonKit](#doraemonkit)
+    * [DebugDrawer](#debugdrawer)
 
 ### Dependency Injections
 #### [AndroidAnnotations](http://androidannotations.org/)
